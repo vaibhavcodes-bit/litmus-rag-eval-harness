@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+
+# Generated files
+data/processed/chroma/
+eval/results/*cache*.json
+eval/results/*progress*.json
+eval/*_backup.py
+eval/*_before_*.py

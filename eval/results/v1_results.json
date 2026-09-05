@@ -1,0 +1,1662 @@
+{
+  "version": "v1",
+  "retrieval_k": 4,
+  "summary": {
+    "total_questions": 50,
+    "hit_rate_at_k": 0.98,
+    "mrr": 0.95,
+    "context_precision": 0.56
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "question": "What is the ideal length for a resume with under 10 years of experience?",
+      "category": "Resume Writing",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "resume_writing.pdf",
+      "retrieved_documents": [
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "Resume Writing\nLitmus V2 career/resume RAG knowledge-base document.\nResume length\nCandidates with fewer than 10 years of experience should generally keep their resume to one page.\nSenior professionals may use no more than two pages.\nResume photos\nFor the US, UK, Canada, and Australia, including a photo on a resume is discouraged because it can\ntrigger unconscious bias and is not standard practice.\nQuantified achievements"
+        },
+        {
+          "source": "cover_letters.pdf",
+          "page": 0,
+          "content": "Cover Letters\nLitmus V2 career/resume RAG knowledge-base document.\nLength\nA cover letter should generally fit on one page and usually contain three to four focused paragraphs.\nPurpose\nA cover letter should complement the resume by adding narrative context, motivation, personality, and\ncultural fit rather than repeating the resume.\nOpening\nA strong opening grabs attention, states the specific role, and briefly conveys genuine enthusiasm or a\ncompelling reason for interest in the company."
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "section like full-time roles, using accomplishment-driven and quantified bullets. Relevant coursework,\ncertifications, and personal projects can strengthen the resume.\nReferences\nModern resumes should omit a references section. “References available upon request” is unnecessary\nand outdated; employers can request references separately.\nSummary versus objective\nA resume summary highlights existing experience and achievements and suits experienced candidates. A"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "resume objective states career goals and is more suited to students, entry-level applicants, or career\nchangers."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.75
+    },
+    {
+      "id": "Q002",
+      "question": "Should a resume include a photo?",
+      "category": "Resume Writing",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "resume_writing.pdf",
+      "retrieved_documents": [
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "Resume Writing\nLitmus V2 career/resume RAG knowledge-base document.\nResume length\nCandidates with fewer than 10 years of experience should generally keep their resume to one page.\nSenior professionals may use no more than two pages.\nResume photos\nFor the US, UK, Canada, and Australia, including a photo on a resume is discouraged because it can\ntrigger unconscious bias and is not standard practice.\nQuantified achievements"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "section like full-time roles, using accomplishment-driven and quantified bullets. Relevant coursework,\ncertifications, and personal projects can strengthen the resume.\nReferences\nModern resumes should omit a references section. “References available upon request” is unnecessary\nand outdated; employers can request references separately.\nSummary versus objective\nA resume summary highlights existing experience and achievements and suits experienced candidates. A"
+        },
+        {
+          "source": "cover_letters.pdf",
+          "page": 0,
+          "content": "Cover Letters\nLitmus V2 career/resume RAG knowledge-base document.\nLength\nA cover letter should generally fit on one page and usually contain three to four focused paragraphs.\nPurpose\nA cover letter should complement the resume by adding narrative context, motivation, personality, and\ncultural fit rather than repeating the resume.\nOpening\nA strong opening grabs attention, states the specific role, and briefly conveys genuine enthusiasm or a\ncompelling reason for interest in the company."
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "resume objective states career goals and is more suited to students, entry-level applicants, or career\nchangers."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.75
+    },
+    {
+      "id": "Q003",
+      "question": "Why are quantified achievements preferred over generic duty statements on a resume?",
+      "category": "Resume Writing",
+      "type": "inferential",
+      "difficulty": "medium",
+      "expected_document": "resume_writing.pdf",
+      "retrieved_documents": [
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "Quantified achievements\nQuantified achievements demonstrate measurable impact and let hiring managers gauge the scale and\nvalue of contributions quickly. A bullet such as “Reduced deployment time by 40% by automating the CI\npipeline” proves impact, while “Responsible for CI pipeline” only states a duty.\nEmployment gaps\nA functional or combination (hybrid) resume can emphasize skills and accomplishments rather than a"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "resume objective states career goals and is more suited to students, entry-level applicants, or career\nchangers."
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "section like full-time roles, using accomplishment-driven and quantified bullets. Relevant coursework,\ncertifications, and personal projects can strengthen the resume.\nReferences\nModern resumes should omit a references section. “References available upon request” is unnecessary\nand outdated; employers can request references separately.\nSummary versus objective\nA resume summary highlights existing experience and achievements and suits experienced candidates. A"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "strict chronological timeline. Functional resumes group experience by skill category and can help\ncandidates with employment gaps or frequent job changes.\nAction verb tense\nUse past-tense action verbs such as Led, Built, and Managed for previous positions, and present-tense\nverbs such as Lead, Build, and Manage for a current role.\nInternships without full-time experience\nEntry-level candidates can place Skills or Projects near the top. Internships can appear in the Experience"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 1.0
+    },
+    {
+      "id": "Q004",
+      "question": "What resume format is best for someone with employment gaps?",
+      "category": "Resume Writing",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "resume_writing.pdf",
+      "retrieved_documents": [
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "Resume Writing\nLitmus V2 career/resume RAG knowledge-base document.\nResume length\nCandidates with fewer than 10 years of experience should generally keep their resume to one page.\nSenior professionals may use no more than two pages.\nResume photos\nFor the US, UK, Canada, and Australia, including a photo on a resume is discouraged because it can\ntrigger unconscious bias and is not standard practice.\nQuantified achievements"
+        },
+        {
+          "source": "cover_letters.pdf",
+          "page": 0,
+          "content": "Cover Letters\nLitmus V2 career/resume RAG knowledge-base document.\nLength\nA cover letter should generally fit on one page and usually contain three to four focused paragraphs.\nPurpose\nA cover letter should complement the resume by adding narrative context, motivation, personality, and\ncultural fit rather than repeating the resume.\nOpening\nA strong opening grabs attention, states the specific role, and briefly conveys genuine enthusiasm or a\ncompelling reason for interest in the company."
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "resume objective states career goals and is more suited to students, entry-level applicants, or career\nchangers."
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "strict chronological timeline. Functional resumes group experience by skill category and can help\ncandidates with employment gaps or frequent job changes.\nAction verb tense\nUse past-tense action verbs such as Led, Built, and Managed for previous positions, and present-tense\nverbs such as Lead, Build, and Manage for a current role.\nInternships without full-time experience\nEntry-level candidates can place Skills or Projects near the top. Internships can appear in the Experience"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.75
+    },
+    {
+      "id": "Q005",
+      "question": "What is the recommended action verb tense for past roles versus a current role on a resume?",
+      "category": "Resume Writing",
+      "type": "factual",
+      "difficulty": "medium",
+      "expected_document": "resume_writing.pdf",
+      "retrieved_documents": [
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "strict chronological timeline. Functional resumes group experience by skill category and can help\ncandidates with employment gaps or frequent job changes.\nAction verb tense\nUse past-tense action verbs such as Led, Built, and Managed for previous positions, and present-tense\nverbs such as Lead, Build, and Manage for a current role.\nInternships without full-time experience\nEntry-level candidates can place Skills or Projects near the top. Internships can appear in the Experience"
+        },
+        {
+          "source": "remote_work_and_career_pivot.pdf",
+          "page": 0,
+          "content": "Remote Work And Career Pivot\nLitmus V2 career/resume RAG knowledge-base document.\nRemote-role resume\nHighlight prior remote work and skills such as self-management, asynchronous communication, and\ncollaboration tools.\nCareer pivoting\nCareer pivoting means making a significant change in industry, function, or role while leveraging\ntransferable skills rather than starting entirely from scratch.\nPersonal project portfolio"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "Resume Writing\nLitmus V2 career/resume RAG knowledge-base document.\nResume length\nCandidates with fewer than 10 years of experience should generally keep their resume to one page.\nSenior professionals may use no more than two pages.\nResume photos\nFor the US, UK, Canada, and Australia, including a photo on a resume is discouraged because it can\ntrigger unconscious bias and is not standard practice.\nQuantified achievements"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "section like full-time roles, using accomplishment-driven and quantified bullets. Relevant coursework,\ncertifications, and personal projects can strengthen the resume.\nReferences\nModern resumes should omit a references section. “References available upon request” is unnecessary\nand outdated; employers can request references separately.\nSummary versus objective\nA resume summary highlights existing experience and achievements and suits experienced candidates. A"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.75
+    },
+    {
+      "id": "Q006",
+      "question": "A candidate has three internships but no full-time job. How should they structure their resume to appear competitive for an entry-level role?",
+      "category": "Resume Writing",
+      "type": "inferential",
+      "difficulty": "hard",
+      "expected_document": "resume_writing.pdf",
+      "retrieved_documents": [
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "strict chronological timeline. Functional resumes group experience by skill category and can help\ncandidates with employment gaps or frequent job changes.\nAction verb tense\nUse past-tense action verbs such as Led, Built, and Managed for previous positions, and present-tense\nverbs such as Lead, Build, and Manage for a current role.\nInternships without full-time experience\nEntry-level candidates can place Skills or Projects near the top. Internships can appear in the Experience"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "section like full-time roles, using accomplishment-driven and quantified bullets. Relevant coursework,\ncertifications, and personal projects can strengthen the resume.\nReferences\nModern resumes should omit a references section. “References available upon request” is unnecessary\nand outdated; employers can request references separately.\nSummary versus objective\nA resume summary highlights existing experience and achievements and suits experienced candidates. A"
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Job Search Strategy\nLitmus V2 career/resume RAG knowledge-base document.\nHidden job market\nThe hidden job market refers to openings filled through networking, referrals, or internal promotion rather\nthan public advertising.\nNetworking\nNetworking can surface hidden opportunities and provide internal referrals. Referrals frequently receive\npriority screening compared with general careers-page applications.\nInformational interview"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "resume objective states career goals and is more suited to students, entry-level applicants, or career\nchangers."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.75
+    },
+    {
+      "id": "Q007",
+      "question": "Is it necessary to include references on a resume?",
+      "category": "Resume Writing",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "resume_writing.pdf",
+      "retrieved_documents": [
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "section like full-time roles, using accomplishment-driven and quantified bullets. Relevant coursework,\ncertifications, and personal projects can strengthen the resume.\nReferences\nModern resumes should omit a references section. “References available upon request” is unnecessary\nand outdated; employers can request references separately.\nSummary versus objective\nA resume summary highlights existing experience and achievements and suits experienced candidates. A"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "Resume Writing\nLitmus V2 career/resume RAG knowledge-base document.\nResume length\nCandidates with fewer than 10 years of experience should generally keep their resume to one page.\nSenior professionals may use no more than two pages.\nResume photos\nFor the US, UK, Canada, and Australia, including a photo on a resume is discouraged because it can\ntrigger unconscious bias and is not standard practice.\nQuantified achievements"
+        },
+        {
+          "source": "cover_letters.pdf",
+          "page": 0,
+          "content": "Cover Letters\nLitmus V2 career/resume RAG knowledge-base document.\nLength\nA cover letter should generally fit on one page and usually contain three to four focused paragraphs.\nPurpose\nA cover letter should complement the resume by adding narrative context, motivation, personality, and\ncultural fit rather than repeating the resume.\nOpening\nA strong opening grabs attention, states the specific role, and briefly conveys genuine enthusiasm or a\ncompelling reason for interest in the company."
+        },
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Newer systems may detect unnatural repetition and recruiters may notice the lack of genuine context.\nATS filtering\nSome ATS platforms automatically score and rank resumes and may filter out resumes below a\nconfigured relevance or keyword-match threshold before a recruiter sees them."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q008",
+      "question": "What is the difference between a resume summary and a resume objective?",
+      "category": "Resume Writing",
+      "type": "comparative",
+      "difficulty": "medium",
+      "expected_document": "resume_writing.pdf",
+      "retrieved_documents": [
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "resume objective states career goals and is more suited to students, entry-level applicants, or career\nchangers."
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "section like full-time roles, using accomplishment-driven and quantified bullets. Relevant coursework,\ncertifications, and personal projects can strengthen the resume.\nReferences\nModern resumes should omit a references section. “References available upon request” is unnecessary\nand outdated; employers can request references separately.\nSummary versus objective\nA resume summary highlights existing experience and achievements and suits experienced candidates. A"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "Resume Writing\nLitmus V2 career/resume RAG knowledge-base document.\nResume length\nCandidates with fewer than 10 years of experience should generally keep their resume to one page.\nSenior professionals may use no more than two pages.\nResume photos\nFor the US, UK, Canada, and Australia, including a photo on a resume is discouraged because it can\ntrigger unconscious bias and is not standard practice.\nQuantified achievements"
+        },
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Ats Optimization\nLitmus V2 career/resume RAG knowledge-base document.\nATS meaning\nATS stands for Applicant Tracking System. Employers use ATS software to collect, parse, manage, scan,\nand rank resumes before human review.\nTables and graphics\nComplex tables, columns, text boxes, and embedded graphics can cause ATS parsers to drop, scramble,\nor misread content. Simple, linear formatting is safer.\nJob-description terminology"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.75
+    },
+    {
+      "id": "Q009",
+      "question": "What does ATS stand for in the context of job applications?",
+      "category": "ATS Optimization",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "ats_optimization.pdf",
+      "retrieved_documents": [
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Ats Optimization\nLitmus V2 career/resume RAG knowledge-base document.\nATS meaning\nATS stands for Applicant Tracking System. Employers use ATS software to collect, parse, manage, scan,\nand rank resumes before human review.\nTables and graphics\nComplex tables, columns, text boxes, and embedded graphics can cause ATS parsers to drop, scramble,\nor misread content. Simple, linear formatting is safer.\nJob-description terminology"
+        },
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Newer systems may detect unnatural repetition and recruiters may notice the lack of genuine context.\nATS filtering\nSome ATS platforms automatically score and rank resumes and may filter out resumes below a\nconfigured relevance or keyword-match threshold before a recruiter sees them."
+        },
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Job-description terminology\nWhen a job description repeatedly uses a phrase such as “cross-functional collaboration,” candidates\nshould incorporate that exact phrase naturally where it truthfully applies. ATS keyword matching often\nfavors exact or near-exact terminology.\nFile formats\nA .docx or text-based, non-scanned PDF is generally safest for online applications. Scanned image PDFs\nand unusual formats can fail to parse.\nSection headings"
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "ATS matching and application quality. Generic mass applications often have lower response rates per\napplication.\nCareer changers\nCareer changers should emphasize transferable skills, relevant projects or certifications, and a clear\nnarrative connecting previous experience to the new field.\nFirst step\nBegin with self-assessment: clarify career goals, target roles, target industries, and non-negotiables before\napplying."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.75
+    },
+    {
+      "id": "Q010",
+      "question": "Why should complex tables and graphics be avoided in a resume intended for ATS scanning?",
+      "category": "ATS Optimization",
+      "type": "factual",
+      "difficulty": "medium",
+      "expected_document": "ats_optimization.pdf",
+      "retrieved_documents": [
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Ats Optimization\nLitmus V2 career/resume RAG knowledge-base document.\nATS meaning\nATS stands for Applicant Tracking System. Employers use ATS software to collect, parse, manage, scan,\nand rank resumes before human review.\nTables and graphics\nComplex tables, columns, text boxes, and embedded graphics can cause ATS parsers to drop, scramble,\nor misread content. Simple, linear formatting is safer.\nJob-description terminology"
+        },
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Newer systems may detect unnatural repetition and recruiters may notice the lack of genuine context.\nATS filtering\nSome ATS platforms automatically score and rank resumes and may filter out resumes below a\nconfigured relevance or keyword-match threshold before a recruiter sees them."
+        },
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Job-description terminology\nWhen a job description repeatedly uses a phrase such as “cross-functional collaboration,” candidates\nshould incorporate that exact phrase naturally where it truthfully applies. ATS keyword matching often\nfavors exact or near-exact terminology.\nFile formats\nA .docx or text-based, non-scanned PDF is generally safest for online applications. Scanned image PDFs\nand unusual formats can fail to parse.\nSection headings"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "Resume Writing\nLitmus V2 career/resume RAG knowledge-base document.\nResume length\nCandidates with fewer than 10 years of experience should generally keep their resume to one page.\nSenior professionals may use no more than two pages.\nResume photos\nFor the US, UK, Canada, and Australia, including a photo on a resume is discouraged because it can\ntrigger unconscious bias and is not standard practice.\nQuantified achievements"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.75
+    },
+    {
+      "id": "Q011",
+      "question": "If a job description repeatedly uses the term 'cross-functional collaboration,' what should a candidate do on their resume?",
+      "category": "ATS Optimization",
+      "type": "inferential",
+      "difficulty": "medium",
+      "expected_document": "ats_optimization.pdf",
+      "retrieved_documents": [
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Job-description terminology\nWhen a job description repeatedly uses a phrase such as “cross-functional collaboration,” candidates\nshould incorporate that exact phrase naturally where it truthfully applies. ATS keyword matching often\nfavors exact or near-exact terminology.\nFile formats\nA .docx or text-based, non-scanned PDF is generally safest for online applications. Scanned image PDFs\nand unusual formats can fail to parse.\nSection headings"
+        },
+        {
+          "source": "remote_work_and_career_pivot.pdf",
+          "page": 0,
+          "content": "Remote Work And Career Pivot\nLitmus V2 career/resume RAG knowledge-base document.\nRemote-role resume\nHighlight prior remote work and skills such as self-management, asynchronous communication, and\ncollaboration tools.\nCareer pivoting\nCareer pivoting means making a significant change in industry, function, or role while leveraging\ntransferable skills rather than starting entirely from scratch.\nPersonal project portfolio"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "Quantified achievements\nQuantified achievements demonstrate measurable impact and let hiring managers gauge the scale and\nvalue of contributions quickly. A bullet such as “Reduced deployment time by 40% by automating the CI\npipeline” proves impact, while “Responsible for CI pipeline” only states a duty.\nEmployment gaps\nA functional or combination (hybrid) resume can emphasize skills and accomplishments rather than a"
+        },
+        {
+          "source": "linkedin_branding.pdf",
+          "page": 0,
+          "content": "Linkedin Branding\nLitmus V2 career/resume RAG knowledge-base document.\nAbout section\nA strong LinkedIn About section opens with a hook, summarizes key skills and experience, and ends with\na call to action or invitation to connect, using a first-person conversational tone.\nHeadline\nA professional headline appears with a person's name across LinkedIn, including search results. Specialty\nkeywords and a value proposition increase recruiter discoverability.\nOpen to Work"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.25
+    },
+    {
+      "id": "Q012",
+      "question": "What file format is generally safest for submitting a resume through an online application portal?",
+      "category": "ATS Optimization",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "ats_optimization.pdf",
+      "retrieved_documents": [
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Job-description terminology\nWhen a job description repeatedly uses a phrase such as “cross-functional collaboration,” candidates\nshould incorporate that exact phrase naturally where it truthfully applies. ATS keyword matching often\nfavors exact or near-exact terminology.\nFile formats\nA .docx or text-based, non-scanned PDF is generally safest for online applications. Scanned image PDFs\nand unusual formats can fail to parse.\nSection headings"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "Resume Writing\nLitmus V2 career/resume RAG knowledge-base document.\nResume length\nCandidates with fewer than 10 years of experience should generally keep their resume to one page.\nSenior professionals may use no more than two pages.\nResume photos\nFor the US, UK, Canada, and Australia, including a photo on a resume is discouraged because it can\ntrigger unconscious bias and is not standard practice.\nQuantified achievements"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "section like full-time roles, using accomplishment-driven and quantified bullets. Relevant coursework,\ncertifications, and personal projects can strengthen the resume.\nReferences\nModern resumes should omit a references section. “References available upon request” is unnecessary\nand outdated; employers can request references separately.\nSummary versus objective\nA resume summary highlights existing experience and achievements and suits experienced candidates. A"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "resume objective states career goals and is more suited to students, entry-level applicants, or career\nchangers."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.25
+    },
+    {
+      "id": "Q013",
+      "question": "Should a candidate use standard section headings like 'Experience' and 'Education' on an ATS-optimized resume?",
+      "category": "ATS Optimization",
+      "type": "factual",
+      "difficulty": "medium",
+      "expected_document": "ats_optimization.pdf",
+      "retrieved_documents": [
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Section headings\nUse conventional headings such as Work Experience, Experience, Education, and Skills. Creative\nheadings such as “My Journey” may be ignored or parsed incorrectly.\nKeyword stuffing\nLegitimate ATS optimization naturally integrates relevant, truthful keywords into real experience and skills.\nKeyword stuffing unnaturally repeats or hides keywords, including in white or tiny text, to game a score."
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "section like full-time roles, using accomplishment-driven and quantified bullets. Relevant coursework,\ncertifications, and personal projects can strengthen the resume.\nReferences\nModern resumes should omit a references section. “References available upon request” is unnecessary\nand outdated; employers can request references separately.\nSummary versus objective\nA resume summary highlights existing experience and achievements and suits experienced candidates. A"
+        },
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Ats Optimization\nLitmus V2 career/resume RAG knowledge-base document.\nATS meaning\nATS stands for Applicant Tracking System. Employers use ATS software to collect, parse, manage, scan,\nand rank resumes before human review.\nTables and graphics\nComplex tables, columns, text boxes, and embedded graphics can cause ATS parsers to drop, scramble,\nor misread content. Simple, linear formatting is safer.\nJob-description terminology"
+        },
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Newer systems may detect unnatural repetition and recruiters may notice the lack of genuine context.\nATS filtering\nSome ATS platforms automatically score and rank resumes and may filter out resumes below a\nconfigured relevance or keyword-match threshold before a recruiter sees them."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.75
+    },
+    {
+      "id": "Q014",
+      "question": "How does keyword stuffing differ from legitimate ATS optimization, and why can stuffing backfire?",
+      "category": "ATS Optimization",
+      "type": "multi_hop",
+      "difficulty": "hard",
+      "expected_document": "ats_optimization.pdf",
+      "retrieved_documents": [
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Section headings\nUse conventional headings such as Work Experience, Experience, Education, and Skills. Creative\nheadings such as “My Journey” may be ignored or parsed incorrectly.\nKeyword stuffing\nLegitimate ATS optimization naturally integrates relevant, truthful keywords into real experience and skills.\nKeyword stuffing unnaturally repeats or hides keywords, including in white or tiny text, to game a score."
+        },
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Newer systems may detect unnatural repetition and recruiters may notice the lack of genuine context.\nATS filtering\nSome ATS platforms automatically score and rank resumes and may filter out resumes below a\nconfigured relevance or keyword-match threshold before a recruiter sees them."
+        },
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Ats Optimization\nLitmus V2 career/resume RAG knowledge-base document.\nATS meaning\nATS stands for Applicant Tracking System. Employers use ATS software to collect, parse, manage, scan,\nand rank resumes before human review.\nTables and graphics\nComplex tables, columns, text boxes, and embedded graphics can cause ATS parsers to drop, scramble,\nor misread content. Simple, linear formatting is safer.\nJob-description terminology"
+        },
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Job-description terminology\nWhen a job description repeatedly uses a phrase such as “cross-functional collaboration,” candidates\nshould incorporate that exact phrase naturally where it truthfully applies. ATS keyword matching often\nfavors exact or near-exact terminology.\nFile formats\nA .docx or text-based, non-scanned PDF is generally safest for online applications. Scanned image PDFs\nand unusual formats can fail to parse.\nSection headings"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 1.0
+    },
+    {
+      "id": "Q015",
+      "question": "Can an ATS reject a resume before a human ever sees it?",
+      "category": "ATS Optimization",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "ats_optimization.pdf",
+      "retrieved_documents": [
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Newer systems may detect unnatural repetition and recruiters may notice the lack of genuine context.\nATS filtering\nSome ATS platforms automatically score and rank resumes and may filter out resumes below a\nconfigured relevance or keyword-match threshold before a recruiter sees them."
+        },
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Ats Optimization\nLitmus V2 career/resume RAG knowledge-base document.\nATS meaning\nATS stands for Applicant Tracking System. Employers use ATS software to collect, parse, manage, scan,\nand rank resumes before human review.\nTables and graphics\nComplex tables, columns, text boxes, and embedded graphics can cause ATS parsers to drop, scramble,\nor misread content. Simple, linear formatting is safer.\nJob-description terminology"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "Resume Writing\nLitmus V2 career/resume RAG knowledge-base document.\nResume length\nCandidates with fewer than 10 years of experience should generally keep their resume to one page.\nSenior professionals may use no more than two pages.\nResume photos\nFor the US, UK, Canada, and Australia, including a photo on a resume is discouraged because it can\ntrigger unconscious bias and is not standard practice.\nQuantified achievements"
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "ATS matching and application quality. Generic mass applications often have lower response rates per\napplication.\nCareer changers\nCareer changers should emphasize transferable skills, relevant projects or certifications, and a clear\nnarrative connecting previous experience to the new field.\nFirst step\nBegin with self-assessment: clarify career goals, target roles, target industries, and non-negotiables before\napplying."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q016",
+      "question": "How long should a cover letter typically be?",
+      "category": "Cover Letters",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "cover_letters.pdf",
+      "retrieved_documents": [
+        {
+          "source": "cover_letters.pdf",
+          "page": 0,
+          "content": "Cover Letters\nLitmus V2 career/resume RAG knowledge-base document.\nLength\nA cover letter should generally fit on one page and usually contain three to four focused paragraphs.\nPurpose\nA cover letter should complement the resume by adding narrative context, motivation, personality, and\ncultural fit rather than repeating the resume.\nOpening\nA strong opening grabs attention, states the specific role, and briefly conveys genuine enthusiasm or a\ncompelling reason for interest in the company."
+        },
+        {
+          "source": "cover_letters.pdf",
+          "page": 0,
+          "content": "compelling reason for interest in the company.\nTailoring\nGeneric one-size-fits-all cover letters are discouraged. Tailor the letter to each role and company and\naddress a named person whenever possible.\nTone\nA professional yet conversational tone is recommended: respectful and polished without being overly stiff,\ncorporate, or excessively casual."
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "Resume Writing\nLitmus V2 career/resume RAG knowledge-base document.\nResume length\nCandidates with fewer than 10 years of experience should generally keep their resume to one page.\nSenior professionals may use no more than two pages.\nResume photos\nFor the US, UK, Canada, and Australia, including a photo on a resume is discouraged because it can\ntrigger unconscious bias and is not standard practice.\nQuantified achievements"
+        },
+        {
+          "source": "test_leave_policy.pdf",
+          "page": 0,
+          "content": "Employees receive 20 annual leave days."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q017",
+      "question": "Why is it considered a mistake to restate the entire resume in a cover letter?",
+      "category": "Cover Letters",
+      "type": "inferential",
+      "difficulty": "medium",
+      "expected_document": "cover_letters.pdf",
+      "retrieved_documents": [
+        {
+          "source": "cover_letters.pdf",
+          "page": 0,
+          "content": "Cover Letters\nLitmus V2 career/resume RAG knowledge-base document.\nLength\nA cover letter should generally fit on one page and usually contain three to four focused paragraphs.\nPurpose\nA cover letter should complement the resume by adding narrative context, motivation, personality, and\ncultural fit rather than repeating the resume.\nOpening\nA strong opening grabs attention, states the specific role, and briefly conveys genuine enthusiasm or a\ncompelling reason for interest in the company."
+        },
+        {
+          "source": "cover_letters.pdf",
+          "page": 0,
+          "content": "compelling reason for interest in the company.\nTailoring\nGeneric one-size-fits-all cover letters are discouraged. Tailor the letter to each role and company and\naddress a named person whenever possible.\nTone\nA professional yet conversational tone is recommended: respectful and polished without being overly stiff,\ncorporate, or excessively casual."
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "Resume Writing\nLitmus V2 career/resume RAG knowledge-base document.\nResume length\nCandidates with fewer than 10 years of experience should generally keep their resume to one page.\nSenior professionals may use no more than two pages.\nResume photos\nFor the US, UK, Canada, and Australia, including a photo on a resume is discouraged because it can\ntrigger unconscious bias and is not standard practice.\nQuantified achievements"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "section like full-time roles, using accomplishment-driven and quantified bullets. Relevant coursework,\ncertifications, and personal projects can strengthen the resume.\nReferences\nModern resumes should omit a references section. “References available upon request” is unnecessary\nand outdated; employers can request references separately.\nSummary versus objective\nA resume summary highlights existing experience and achievements and suits experienced candidates. A"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q018",
+      "question": "What should the opening paragraph of a strong cover letter accomplish?",
+      "category": "Cover Letters",
+      "type": "factual",
+      "difficulty": "medium",
+      "expected_document": "cover_letters.pdf",
+      "retrieved_documents": [
+        {
+          "source": "cover_letters.pdf",
+          "page": 0,
+          "content": "Cover Letters\nLitmus V2 career/resume RAG knowledge-base document.\nLength\nA cover letter should generally fit on one page and usually contain three to four focused paragraphs.\nPurpose\nA cover letter should complement the resume by adding narrative context, motivation, personality, and\ncultural fit rather than repeating the resume.\nOpening\nA strong opening grabs attention, states the specific role, and briefly conveys genuine enthusiasm or a\ncompelling reason for interest in the company."
+        },
+        {
+          "source": "cover_letters.pdf",
+          "page": 0,
+          "content": "compelling reason for interest in the company.\nTailoring\nGeneric one-size-fits-all cover letters are discouraged. Tailor the letter to each role and company and\naddress a named person whenever possible.\nTone\nA professional yet conversational tone is recommended: respectful and polished without being overly stiff,\ncorporate, or excessively casual."
+        },
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Section headings\nUse conventional headings such as Work Experience, Experience, Education, and Skills. Creative\nheadings such as “My Journey” may be ignored or parsed incorrectly.\nKeyword stuffing\nLegitimate ATS optimization naturally integrates relevant, truthful keywords into real experience and skills.\nKeyword stuffing unnaturally repeats or hides keywords, including in white or tiny text, to game a score."
+        },
+        {
+          "source": "linkedin_branding.pdf",
+          "page": 0,
+          "content": "Linkedin Branding\nLitmus V2 career/resume RAG knowledge-base document.\nAbout section\nA strong LinkedIn About section opens with a hook, summarizes key skills and experience, and ends with\na call to action or invitation to connect, using a first-person conversational tone.\nHeadline\nA professional headline appears with a person's name across LinkedIn, including search results. Specialty\nkeywords and a value proposition increase recruiter discoverability.\nOpen to Work"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q019",
+      "question": "Is it acceptable to use a generic, unaddressed cover letter for every job application?",
+      "category": "Cover Letters",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "cover_letters.pdf",
+      "retrieved_documents": [
+        {
+          "source": "cover_letters.pdf",
+          "page": 0,
+          "content": "compelling reason for interest in the company.\nTailoring\nGeneric one-size-fits-all cover letters are discouraged. Tailor the letter to each role and company and\naddress a named person whenever possible.\nTone\nA professional yet conversational tone is recommended: respectful and polished without being overly stiff,\ncorporate, or excessively casual."
+        },
+        {
+          "source": "cover_letters.pdf",
+          "page": 0,
+          "content": "Cover Letters\nLitmus V2 career/resume RAG knowledge-base document.\nLength\nA cover letter should generally fit on one page and usually contain three to four focused paragraphs.\nPurpose\nA cover letter should complement the resume by adding narrative context, motivation, personality, and\ncultural fit rather than repeating the resume.\nOpening\nA strong opening grabs attention, states the specific role, and briefly conveys genuine enthusiasm or a\ncompelling reason for interest in the company."
+        },
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Job-description terminology\nWhen a job description repeatedly uses a phrase such as “cross-functional collaboration,” candidates\nshould incorporate that exact phrase naturally where it truthfully applies. ATS keyword matching often\nfavors exact or near-exact terminology.\nFile formats\nA .docx or text-based, non-scanned PDF is generally safest for online applications. Scanned image PDFs\nand unusual formats can fail to parse.\nSection headings"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "Resume Writing\nLitmus V2 career/resume RAG knowledge-base document.\nResume length\nCandidates with fewer than 10 years of experience should generally keep their resume to one page.\nSenior professionals may use no more than two pages.\nResume photos\nFor the US, UK, Canada, and Australia, including a photo on a resume is discouraged because it can\ntrigger unconscious bias and is not standard practice.\nQuantified achievements"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q020",
+      "question": "What tone is generally recommended for a cover letter?",
+      "category": "Cover Letters",
+      "type": "factual",
+      "difficulty": "medium",
+      "expected_document": "cover_letters.pdf",
+      "retrieved_documents": [
+        {
+          "source": "cover_letters.pdf",
+          "page": 0,
+          "content": "compelling reason for interest in the company.\nTailoring\nGeneric one-size-fits-all cover letters are discouraged. Tailor the letter to each role and company and\naddress a named person whenever possible.\nTone\nA professional yet conversational tone is recommended: respectful and polished without being overly stiff,\ncorporate, or excessively casual."
+        },
+        {
+          "source": "cover_letters.pdf",
+          "page": 0,
+          "content": "Cover Letters\nLitmus V2 career/resume RAG knowledge-base document.\nLength\nA cover letter should generally fit on one page and usually contain three to four focused paragraphs.\nPurpose\nA cover letter should complement the resume by adding narrative context, motivation, personality, and\ncultural fit rather than repeating the resume.\nOpening\nA strong opening grabs attention, states the specific role, and briefly conveys genuine enthusiasm or a\ncompelling reason for interest in the company."
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "Resume Writing\nLitmus V2 career/resume RAG knowledge-base document.\nResume length\nCandidates with fewer than 10 years of experience should generally keep their resume to one page.\nSenior professionals may use no more than two pages.\nResume photos\nFor the US, UK, Canada, and Australia, including a photo on a resume is discouraged because it can\ntrigger unconscious bias and is not standard practice.\nQuantified achievements"
+        },
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Job-description terminology\nWhen a job description repeatedly uses a phrase such as “cross-functional collaboration,” candidates\nshould incorporate that exact phrase naturally where it truthfully applies. ATS keyword matching often\nfavors exact or near-exact terminology.\nFile formats\nA .docx or text-based, non-scanned PDF is generally safest for online applications. Scanned image PDFs\nand unusual formats can fail to parse.\nSection headings"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q021",
+      "question": "What does the STAR method stand for in interview answers?",
+      "category": "Interview Prep",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "interview_prep.pdf",
+      "retrieved_documents": [
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Interview Prep\nLitmus V2 career/resume RAG knowledge-base document.\nSTAR\nSTAR stands for Situation, Task, Action, and Result, a common framework for behavioral interview\nanswers.\nWhy STAR works\nSTAR provides context, clarifies the candidate’s specific role and actions, and highlights outcomes,\npreventing vague or rambling responses.\nGreatest weakness\nAvoid disguised strengths such as “I work too hard.” Give a genuine, self-aware weakness and concrete\nsteps taken to improve it."
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Technical screening\nA technical screening verifies baseline technical competency early, often through a short coding or\nknowledge-based call, before longer onsite or panel interviews.\nSalary timing\nSalary negotiation is generally reserved for after a formal offer rather than early interview rounds.\nAfter interview\nWithin 24 hours, send a personalized thank-you email, reiterate interest, and reference something specific\ndiscussed.\nBehavioral vs technical"
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Informational interview\nAn informational interview is a casual, low-pressure conversation with a professional to learn about a role\nor industry, not to directly ask for a job.\nLinkedIn updates\nDuring an active search, keep LinkedIn continuously updated and ideally revisit it every few weeks,\nincluding the headline, summary, and recent accomplishments.\nTargeted applications\nHighly targeted applications allow resumes and cover letters to be tailored closely to each role, improving"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "discussed.\nBehavioral vs technical\nBehavioral interviews assess soft skills, past conduct, teamwork, conflict resolution, adaptability,\ncommunication, and cultural fit. Technical interviews assess applied problem solving and domain\nknowledge such as coding or system design. Companies may use both because technical competence\nalone does not guarantee collaboration or communication.\nMock interview"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.75
+    },
+    {
+      "id": "Q022",
+      "question": "Why does the STAR method help candidates give stronger behavioral interview answers?",
+      "category": "Interview Prep",
+      "type": "inferential",
+      "difficulty": "medium",
+      "expected_document": "interview_prep.pdf",
+      "retrieved_documents": [
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Interview Prep\nLitmus V2 career/resume RAG knowledge-base document.\nSTAR\nSTAR stands for Situation, Task, Action, and Result, a common framework for behavioral interview\nanswers.\nWhy STAR works\nSTAR provides context, clarifies the candidate’s specific role and actions, and highlights outcomes,\npreventing vague or rambling responses.\nGreatest weakness\nAvoid disguised strengths such as “I work too hard.” Give a genuine, self-aware weakness and concrete\nsteps taken to improve it."
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "discussed.\nBehavioral vs technical\nBehavioral interviews assess soft skills, past conduct, teamwork, conflict resolution, adaptability,\ncommunication, and cultural fit. Technical interviews assess applied problem solving and domain\nknowledge such as coding or system design. Companies may use both because technical competence\nalone does not guarantee collaboration or communication.\nMock interview"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "steps taken to improve it.\nQuestions for interviewer\nCandidates should prepare thoughtful questions. Having none can signal disengagement; questions about\nthe team, role, or company are appropriate.\nSystem design\nJumping straight to code skips requirements, scale, constraints, goals, and trade-offs. Clarify requirements\nfirst, then discuss high-level architecture and trade-offs before implementation details.\nTechnical screening"
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Informational interview\nAn informational interview is a casual, low-pressure conversation with a professional to learn about a role\nor industry, not to directly ask for a job.\nLinkedIn updates\nDuring an active search, keep LinkedIn continuously updated and ideally revisit it every few weeks,\nincluding the headline, summary, and recent accomplishments.\nTargeted applications\nHighly targeted applications allow resumes and cover letters to be tailored closely to each role, improving"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.75
+    },
+    {
+      "id": "Q023",
+      "question": "What is a common mistake candidates make when answering 'What is your greatest weakness?'",
+      "category": "Interview Prep",
+      "type": "factual",
+      "difficulty": "medium",
+      "expected_document": "interview_prep.pdf",
+      "retrieved_documents": [
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Interview Prep\nLitmus V2 career/resume RAG knowledge-base document.\nSTAR\nSTAR stands for Situation, Task, Action, and Result, a common framework for behavioral interview\nanswers.\nWhy STAR works\nSTAR provides context, clarifies the candidate’s specific role and actions, and highlights outcomes,\npreventing vague or rambling responses.\nGreatest weakness\nAvoid disguised strengths such as “I work too hard.” Give a genuine, self-aware weakness and concrete\nsteps taken to improve it."
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "steps taken to improve it.\nQuestions for interviewer\nCandidates should prepare thoughtful questions. Having none can signal disengagement; questions about\nthe team, role, or company are appropriate.\nSystem design\nJumping straight to code skips requirements, scale, constraints, goals, and trade-offs. Clarify requirements\nfirst, then discuss high-level architecture and trade-offs before implementation details.\nTechnical screening"
+        },
+        {
+          "source": "cover_letters.pdf",
+          "page": 0,
+          "content": "compelling reason for interest in the company.\nTailoring\nGeneric one-size-fits-all cover letters are discouraged. Tailor the letter to each role and company and\naddress a named person whenever possible.\nTone\nA professional yet conversational tone is recommended: respectful and polished without being overly stiff,\ncorporate, or excessively casual."
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Informational interview\nAn informational interview is a casual, low-pressure conversation with a professional to learn about a role\nor industry, not to directly ask for a job.\nLinkedIn updates\nDuring an active search, keep LinkedIn continuously updated and ideally revisit it every few weeks,\nincluding the headline, summary, and recent accomplishments.\nTargeted applications\nHighly targeted applications allow resumes and cover letters to be tailored closely to each role, improving"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q024",
+      "question": "Should a candidate prepare questions to ask the interviewer at the end of the interview?",
+      "category": "Interview Prep",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "interview_prep.pdf",
+      "retrieved_documents": [
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "steps taken to improve it.\nQuestions for interviewer\nCandidates should prepare thoughtful questions. Having none can signal disengagement; questions about\nthe team, role, or company are appropriate.\nSystem design\nJumping straight to code skips requirements, scale, constraints, goals, and trade-offs. Clarify requirements\nfirst, then discuss high-level architecture and trade-offs before implementation details.\nTechnical screening"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 1,
+          "content": "A mock interview is a practice interview with a friend, mentor, or coach that simulates the real experience,\nbuilds confidence, and provides feedback."
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Informational interview\nAn informational interview is a casual, low-pressure conversation with a professional to learn about a role\nor industry, not to directly ask for a job.\nLinkedIn updates\nDuring an active search, keep LinkedIn continuously updated and ideally revisit it every few weeks,\nincluding the headline, summary, and recent accomplishments.\nTargeted applications\nHighly targeted applications allow resumes and cover letters to be tailored closely to each role, improving"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Technical screening\nA technical screening verifies baseline technical competency early, often through a short coding or\nknowledge-based call, before longer onsite or panel interviews.\nSalary timing\nSalary negotiation is generally reserved for after a formal offer rather than early interview rounds.\nAfter interview\nWithin 24 hours, send a personalized thank-you email, reiterate interest, and reference something specific\ndiscussed.\nBehavioral vs technical"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.75
+    },
+    {
+      "id": "Q025",
+      "question": "A candidate is asked a system design question and immediately jumps to writing code. What is the issue with this approach and what should they do instead?",
+      "category": "Interview Prep",
+      "type": "inferential",
+      "difficulty": "hard",
+      "expected_document": "interview_prep.pdf",
+      "retrieved_documents": [
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "steps taken to improve it.\nQuestions for interviewer\nCandidates should prepare thoughtful questions. Having none can signal disengagement; questions about\nthe team, role, or company are appropriate.\nSystem design\nJumping straight to code skips requirements, scale, constraints, goals, and trade-offs. Clarify requirements\nfirst, then discuss high-level architecture and trade-offs before implementation details.\nTechnical screening"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "discussed.\nBehavioral vs technical\nBehavioral interviews assess soft skills, past conduct, teamwork, conflict resolution, adaptability,\ncommunication, and cultural fit. Technical interviews assess applied problem solving and domain\nknowledge such as coding or system design. Companies may use both because technical competence\nalone does not guarantee collaboration or communication.\nMock interview"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Technical screening\nA technical screening verifies baseline technical competency early, often through a short coding or\nknowledge-based call, before longer onsite or panel interviews.\nSalary timing\nSalary negotiation is generally reserved for after a formal offer rather than early interview rounds.\nAfter interview\nWithin 24 hours, send a personalized thank-you email, reiterate interest, and reference something specific\ndiscussed.\nBehavioral vs technical"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Interview Prep\nLitmus V2 career/resume RAG knowledge-base document.\nSTAR\nSTAR stands for Situation, Task, Action, and Result, a common framework for behavioral interview\nanswers.\nWhy STAR works\nSTAR provides context, clarifies the candidate’s specific role and actions, and highlights outcomes,\npreventing vague or rambling responses.\nGreatest weakness\nAvoid disguised strengths such as “I work too hard.” Give a genuine, self-aware weakness and concrete\nsteps taken to improve it."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 1.0
+    },
+    {
+      "id": "Q026",
+      "question": "What is the purpose of a technical screening round in a hiring process?",
+      "category": "Interview Prep",
+      "type": "factual",
+      "difficulty": "medium",
+      "expected_document": "interview_prep.pdf",
+      "retrieved_documents": [
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Technical screening\nA technical screening verifies baseline technical competency early, often through a short coding or\nknowledge-based call, before longer onsite or panel interviews.\nSalary timing\nSalary negotiation is generally reserved for after a formal offer rather than early interview rounds.\nAfter interview\nWithin 24 hours, send a personalized thank-you email, reiterate interest, and reference something specific\ndiscussed.\nBehavioral vs technical"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "steps taken to improve it.\nQuestions for interviewer\nCandidates should prepare thoughtful questions. Having none can signal disengagement; questions about\nthe team, role, or company are appropriate.\nSystem design\nJumping straight to code skips requirements, scale, constraints, goals, and trade-offs. Clarify requirements\nfirst, then discuss high-level architecture and trade-offs before implementation details.\nTechnical screening"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "discussed.\nBehavioral vs technical\nBehavioral interviews assess soft skills, past conduct, teamwork, conflict resolution, adaptability,\ncommunication, and cultural fit. Technical interviews assess applied problem solving and domain\nknowledge such as coding or system design. Companies may use both because technical competence\nalone does not guarantee collaboration or communication.\nMock interview"
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Job Search Strategy\nLitmus V2 career/resume RAG knowledge-base document.\nHidden job market\nThe hidden job market refers to openings filled through networking, referrals, or internal promotion rather\nthan public advertising.\nNetworking\nNetworking can surface hidden opportunities and provide internal referrals. Referrals frequently receive\npriority screening compared with general careers-page applications.\nInformational interview"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.75
+    },
+    {
+      "id": "Q027",
+      "question": "Is it appropriate to negotiate salary during the very first interview?",
+      "category": "Interview Prep",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "interview_prep.pdf",
+      "retrieved_documents": [
+        {
+          "source": "salary_negotiation.pdf",
+          "page": 0,
+          "content": "Salary Negotiation\nLitmus V2 career/resume RAG knowledge-base document.\nTiming\nThe best time to negotiate salary is after receiving a formal offer and before accepting it, when the\ncandidate generally has the most leverage.\nEmployer-first anchoring\nLetting the employer state a figure first can avoid anchoring too low; naming a number first risks anchoring\nbelow the employer’s budget.\nOther negotiable elements"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Technical screening\nA technical screening verifies baseline technical competency early, often through a short coding or\nknowledge-based call, before longer onsite or panel interviews.\nSalary timing\nSalary negotiation is generally reserved for after a formal offer rather than early interview rounds.\nAfter interview\nWithin 24 hours, send a personalized thank-you email, reiterate interest, and reference something specific\ndiscussed.\nBehavioral vs technical"
+        },
+        {
+          "source": "salary_negotiation.pdf",
+          "page": 0,
+          "content": "Other negotiable elements\nNegotiable elements can include signing bonus, equity or stock options, remote/flexible work, vacation\ndays, start date, professional development budget, and other benefits.\nMarket research\nResearch comparable market and industry salary data before negotiating to provide a factual,\ndata-backed basis for a counteroffer."
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "steps taken to improve it.\nQuestions for interviewer\nCandidates should prepare thoughtful questions. Having none can signal disengagement; questions about\nthe team, role, or company are appropriate.\nSystem design\nJumping straight to code skips requirements, scale, constraints, goals, and trade-offs. Clarify requirements\nfirst, then discuss high-level architecture and trade-offs before implementation details.\nTechnical screening"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 0.5,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q028",
+      "question": "What should a candidate do within 24 hours of finishing an interview?",
+      "category": "Interview Prep",
+      "type": "factual",
+      "difficulty": "medium",
+      "expected_document": "interview_prep.pdf",
+      "retrieved_documents": [
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "steps taken to improve it.\nQuestions for interviewer\nCandidates should prepare thoughtful questions. Having none can signal disengagement; questions about\nthe team, role, or company are appropriate.\nSystem design\nJumping straight to code skips requirements, scale, constraints, goals, and trade-offs. Clarify requirements\nfirst, then discuss high-level architecture and trade-offs before implementation details.\nTechnical screening"
+        },
+        {
+          "source": "test_policy.pdf",
+          "page": 0,
+          "content": "Company working hours are from 9 AM to 6 PM."
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Technical screening\nA technical screening verifies baseline technical competency early, often through a short coding or\nknowledge-based call, before longer onsite or panel interviews.\nSalary timing\nSalary negotiation is generally reserved for after a formal offer rather than early interview rounds.\nAfter interview\nWithin 24 hours, send a personalized thank-you email, reiterate interest, and reference something specific\ndiscussed.\nBehavioral vs technical"
+        },
+        {
+          "source": "salary_negotiation.pdf",
+          "page": 0,
+          "content": "Salary Negotiation\nLitmus V2 career/resume RAG knowledge-base document.\nTiming\nThe best time to negotiate salary is after receiving a formal offer and before accepting it, when the\ncandidate generally has the most leverage.\nEmployer-first anchoring\nLetting the employer state a figure first can avoid anchoring too low; naming a number first risks anchoring\nbelow the employer’s budget.\nOther negotiable elements"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q029",
+      "question": "How do behavioral interviews and technical interviews differ in what they are trying to assess, and why might a company use both?",
+      "category": "Interview Prep",
+      "type": "multi_hop",
+      "difficulty": "hard",
+      "expected_document": "interview_prep.pdf",
+      "retrieved_documents": [
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "discussed.\nBehavioral vs technical\nBehavioral interviews assess soft skills, past conduct, teamwork, conflict resolution, adaptability,\ncommunication, and cultural fit. Technical interviews assess applied problem solving and domain\nknowledge such as coding or system design. Companies may use both because technical competence\nalone does not guarantee collaboration or communication.\nMock interview"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Technical screening\nA technical screening verifies baseline technical competency early, often through a short coding or\nknowledge-based call, before longer onsite or panel interviews.\nSalary timing\nSalary negotiation is generally reserved for after a formal offer rather than early interview rounds.\nAfter interview\nWithin 24 hours, send a personalized thank-you email, reiterate interest, and reference something specific\ndiscussed.\nBehavioral vs technical"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 1,
+          "content": "A mock interview is a practice interview with a friend, mentor, or coach that simulates the real experience,\nbuilds confidence, and provides feedback."
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Informational interview\nAn informational interview is a casual, low-pressure conversation with a professional to learn about a role\nor industry, not to directly ask for a job.\nLinkedIn updates\nDuring an active search, keep LinkedIn continuously updated and ideally revisit it every few weeks,\nincluding the headline, summary, and recent accomplishments.\nTargeted applications\nHighly targeted applications allow resumes and cover letters to be tailored closely to each role, improving"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.75
+    },
+    {
+      "id": "Q030",
+      "question": "What is a mock interview?",
+      "category": "Interview Prep",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "interview_prep.pdf",
+      "retrieved_documents": [
+        {
+          "source": "interview_prep.pdf",
+          "page": 1,
+          "content": "A mock interview is a practice interview with a friend, mentor, or coach that simulates the real experience,\nbuilds confidence, and provides feedback."
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "discussed.\nBehavioral vs technical\nBehavioral interviews assess soft skills, past conduct, teamwork, conflict resolution, adaptability,\ncommunication, and cultural fit. Technical interviews assess applied problem solving and domain\nknowledge such as coding or system design. Companies may use both because technical competence\nalone does not guarantee collaboration or communication.\nMock interview"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Interview Prep\nLitmus V2 career/resume RAG knowledge-base document.\nSTAR\nSTAR stands for Situation, Task, Action, and Result, a common framework for behavioral interview\nanswers.\nWhy STAR works\nSTAR provides context, clarifies the candidate’s specific role and actions, and highlights outcomes,\npreventing vague or rambling responses.\nGreatest weakness\nAvoid disguised strengths such as “I work too hard.” Give a genuine, self-aware weakness and concrete\nsteps taken to improve it."
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "steps taken to improve it.\nQuestions for interviewer\nCandidates should prepare thoughtful questions. Having none can signal disengagement; questions about\nthe team, role, or company are appropriate.\nSystem design\nJumping straight to code skips requirements, scale, constraints, goals, and trade-offs. Clarify requirements\nfirst, then discuss high-level architecture and trade-offs before implementation details.\nTechnical screening"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 1.0
+    },
+    {
+      "id": "Q031",
+      "question": "What is the 'hidden job market'?",
+      "category": "Job Search Strategy",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "job_search_strategy.pdf",
+      "retrieved_documents": [
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Job Search Strategy\nLitmus V2 career/resume RAG knowledge-base document.\nHidden job market\nThe hidden job market refers to openings filled through networking, referrals, or internal promotion rather\nthan public advertising.\nNetworking\nNetworking can surface hidden opportunities and provide internal referrals. Referrals frequently receive\npriority screening compared with general careers-page applications.\nInformational interview"
+        },
+        {
+          "source": "salary_negotiation.pdf",
+          "page": 0,
+          "content": "Other negotiable elements\nNegotiable elements can include signing bonus, equity or stock options, remote/flexible work, vacation\ndays, start date, professional development budget, and other benefits.\nMarket research\nResearch comparable market and industry salary data before negotiating to provide a factual,\ndata-backed basis for a counteroffer."
+        },
+        {
+          "source": "linkedin_branding.pdf",
+          "page": 0,
+          "content": "Open to Work\nOpen to Work signals active job seeking to recruiters and can increase visibility in recruiter search results\nand inbound outreach.\nRecommendations\nA small number of specific, relevant recommendations from former managers or colleagues adds\ncredibility and helps validate claimed skills."
+        },
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Ats Optimization\nLitmus V2 career/resume RAG knowledge-base document.\nATS meaning\nATS stands for Applicant Tracking System. Employers use ATS software to collect, parse, manage, scan,\nand rank resumes before human review.\nTables and graphics\nComplex tables, columns, text boxes, and embedded graphics can cause ATS parsers to drop, scramble,\nor misread content. Simple, linear formatting is safer.\nJob-description terminology"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.25
+    },
+    {
+      "id": "Q032",
+      "question": "Why is networking often considered more effective than cold-applying to job postings?",
+      "category": "Job Search Strategy",
+      "type": "inferential",
+      "difficulty": "medium",
+      "expected_document": "job_search_strategy.pdf",
+      "retrieved_documents": [
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Job Search Strategy\nLitmus V2 career/resume RAG knowledge-base document.\nHidden job market\nThe hidden job market refers to openings filled through networking, referrals, or internal promotion rather\nthan public advertising.\nNetworking\nNetworking can surface hidden opportunities and provide internal referrals. Referrals frequently receive\npriority screening compared with general careers-page applications.\nInformational interview"
+        },
+        {
+          "source": "linkedin_branding.pdf",
+          "page": 0,
+          "content": "Open to Work\nOpen to Work signals active job seeking to recruiters and can increase visibility in recruiter search results\nand inbound outreach.\nRecommendations\nA small number of specific, relevant recommendations from former managers or colleagues adds\ncredibility and helps validate claimed skills."
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Informational interview\nAn informational interview is a casual, low-pressure conversation with a professional to learn about a role\nor industry, not to directly ask for a job.\nLinkedIn updates\nDuring an active search, keep LinkedIn continuously updated and ideally revisit it every few weeks,\nincluding the headline, summary, and recent accomplishments.\nTargeted applications\nHighly targeted applications allow resumes and cover letters to be tailored closely to each role, improving"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "discussed.\nBehavioral vs technical\nBehavioral interviews assess soft skills, past conduct, teamwork, conflict resolution, adaptability,\ncommunication, and cultural fit. Technical interviews assess applied problem solving and domain\nknowledge such as coding or system design. Companies may use both because technical competence\nalone does not guarantee collaboration or communication.\nMock interview"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q033",
+      "question": "What is an informational interview?",
+      "category": "Job Search Strategy",
+      "type": "factual",
+      "difficulty": "medium",
+      "expected_document": "job_search_strategy.pdf",
+      "retrieved_documents": [
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Informational interview\nAn informational interview is a casual, low-pressure conversation with a professional to learn about a role\nor industry, not to directly ask for a job.\nLinkedIn updates\nDuring an active search, keep LinkedIn continuously updated and ideally revisit it every few weeks,\nincluding the headline, summary, and recent accomplishments.\nTargeted applications\nHighly targeted applications allow resumes and cover letters to be tailored closely to each role, improving"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "discussed.\nBehavioral vs technical\nBehavioral interviews assess soft skills, past conduct, teamwork, conflict resolution, adaptability,\ncommunication, and cultural fit. Technical interviews assess applied problem solving and domain\nknowledge such as coding or system design. Companies may use both because technical competence\nalone does not guarantee collaboration or communication.\nMock interview"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "steps taken to improve it.\nQuestions for interviewer\nCandidates should prepare thoughtful questions. Having none can signal disengagement; questions about\nthe team, role, or company are appropriate.\nSystem design\nJumping straight to code skips requirements, scale, constraints, goals, and trade-offs. Clarify requirements\nfirst, then discuss high-level architecture and trade-offs before implementation details.\nTechnical screening"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Interview Prep\nLitmus V2 career/resume RAG knowledge-base document.\nSTAR\nSTAR stands for Situation, Task, Action, and Result, a common framework for behavioral interview\nanswers.\nWhy STAR works\nSTAR provides context, clarifies the candidate’s specific role and actions, and highlights outcomes,\npreventing vague or rambling responses.\nGreatest weakness\nAvoid disguised strengths such as “I work too hard.” Give a genuine, self-aware weakness and concrete\nsteps taken to improve it."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.25
+    },
+    {
+      "id": "Q034",
+      "question": "How often should a job seeker update their LinkedIn profile while actively job hunting?",
+      "category": "Job Search Strategy",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "job_search_strategy.pdf",
+      "retrieved_documents": [
+        {
+          "source": "linkedin_branding.pdf",
+          "page": 0,
+          "content": "Linkedin Branding\nLitmus V2 career/resume RAG knowledge-base document.\nAbout section\nA strong LinkedIn About section opens with a hook, summarizes key skills and experience, and ends with\na call to action or invitation to connect, using a first-person conversational tone.\nHeadline\nA professional headline appears with a person's name across LinkedIn, including search results. Specialty\nkeywords and a value proposition increase recruiter discoverability.\nOpen to Work"
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Informational interview\nAn informational interview is a casual, low-pressure conversation with a professional to learn about a role\nor industry, not to directly ask for a job.\nLinkedIn updates\nDuring an active search, keep LinkedIn continuously updated and ideally revisit it every few weeks,\nincluding the headline, summary, and recent accomplishments.\nTargeted applications\nHighly targeted applications allow resumes and cover letters to be tailored closely to each role, improving"
+        },
+        {
+          "source": "linkedin_branding.pdf",
+          "page": 0,
+          "content": "Open to Work\nOpen to Work signals active job seeking to recruiters and can increase visibility in recruiter search results\nand inbound outreach.\nRecommendations\nA small number of specific, relevant recommendations from former managers or colleagues adds\ncredibility and helps validate claimed skills."
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "ATS matching and application quality. Generic mass applications often have lower response rates per\napplication.\nCareer changers\nCareer changers should emphasize transferable skills, relevant projects or certifications, and a clear\nnarrative connecting previous experience to the new field.\nFirst step\nBegin with self-assessment: clarify career goals, target roles, target industries, and non-negotiables before\napplying."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 0.5,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q035",
+      "question": "Why might applying to a smaller number of highly targeted jobs be more effective than mass-applying to many postings?",
+      "category": "Job Search Strategy",
+      "type": "inferential",
+      "difficulty": "medium",
+      "expected_document": "job_search_strategy.pdf",
+      "retrieved_documents": [
+        {
+          "source": "linkedin_branding.pdf",
+          "page": 0,
+          "content": "Open to Work\nOpen to Work signals active job seeking to recruiters and can increase visibility in recruiter search results\nand inbound outreach.\nRecommendations\nA small number of specific, relevant recommendations from former managers or colleagues adds\ncredibility and helps validate claimed skills."
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Job Search Strategy\nLitmus V2 career/resume RAG knowledge-base document.\nHidden job market\nThe hidden job market refers to openings filled through networking, referrals, or internal promotion rather\nthan public advertising.\nNetworking\nNetworking can surface hidden opportunities and provide internal referrals. Referrals frequently receive\npriority screening compared with general careers-page applications.\nInformational interview"
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "ATS matching and application quality. Generic mass applications often have lower response rates per\napplication.\nCareer changers\nCareer changers should emphasize transferable skills, relevant projects or certifications, and a clear\nnarrative connecting previous experience to the new field.\nFirst step\nBegin with self-assessment: clarify career goals, target roles, target industries, and non-negotiables before\napplying."
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "Quantified achievements\nQuantified achievements demonstrate measurable impact and let hiring managers gauge the scale and\nvalue of contributions quickly. A bullet such as “Reduced deployment time by 40% by automating the CI\npipeline” proves impact, while “Responsible for CI pipeline” only states a duty.\nEmployment gaps\nA functional or combination (hybrid) resume can emphasize skills and accomplishments rather than a"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 0.5,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q036",
+      "question": "What is a career changer expected to emphasize when targeting a new industry?",
+      "category": "Job Search Strategy",
+      "type": "factual",
+      "difficulty": "medium",
+      "expected_document": "job_search_strategy.pdf",
+      "retrieved_documents": [
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "ATS matching and application quality. Generic mass applications often have lower response rates per\napplication.\nCareer changers\nCareer changers should emphasize transferable skills, relevant projects or certifications, and a clear\nnarrative connecting previous experience to the new field.\nFirst step\nBegin with self-assessment: clarify career goals, target roles, target industries, and non-negotiables before\napplying."
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Job Search Strategy\nLitmus V2 career/resume RAG knowledge-base document.\nHidden job market\nThe hidden job market refers to openings filled through networking, referrals, or internal promotion rather\nthan public advertising.\nNetworking\nNetworking can surface hidden opportunities and provide internal referrals. Referrals frequently receive\npriority screening compared with general careers-page applications.\nInformational interview"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "resume objective states career goals and is more suited to students, entry-level applicants, or career\nchangers."
+        },
+        {
+          "source": "remote_work_and_career_pivot.pdf",
+          "page": 0,
+          "content": "Personal project portfolio\nFor a transition into a technical field without formal experience, a personal project portfolio provides\ntangible evidence of applied skills for hiring managers to evaluate.\nCareer growth trajectory\nCareer growth trajectory is the pattern of increasing responsibility, scope, or seniority across roles,\nsignaling upward momentum."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q037",
+      "question": "What is the recommended first step before starting a job search?",
+      "category": "Job Search Strategy",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "job_search_strategy.pdf",
+      "retrieved_documents": [
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Job Search Strategy\nLitmus V2 career/resume RAG knowledge-base document.\nHidden job market\nThe hidden job market refers to openings filled through networking, referrals, or internal promotion rather\nthan public advertising.\nNetworking\nNetworking can surface hidden opportunities and provide internal referrals. Referrals frequently receive\npriority screening compared with general careers-page applications.\nInformational interview"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "steps taken to improve it.\nQuestions for interviewer\nCandidates should prepare thoughtful questions. Having none can signal disengagement; questions about\nthe team, role, or company are appropriate.\nSystem design\nJumping straight to code skips requirements, scale, constraints, goals, and trade-offs. Clarify requirements\nfirst, then discuss high-level architecture and trade-offs before implementation details.\nTechnical screening"
+        },
+        {
+          "source": "salary_negotiation.pdf",
+          "page": 0,
+          "content": "Salary Negotiation\nLitmus V2 career/resume RAG knowledge-base document.\nTiming\nThe best time to negotiate salary is after receiving a formal offer and before accepting it, when the\ncandidate generally has the most leverage.\nEmployer-first anchoring\nLetting the employer state a figure first can avoid anchoring too low; naming a number first risks anchoring\nbelow the employer’s budget.\nOther negotiable elements"
+        },
+        {
+          "source": "linkedin_branding.pdf",
+          "page": 0,
+          "content": "Open to Work\nOpen to Work signals active job seeking to recruiters and can increase visibility in recruiter search results\nand inbound outreach.\nRecommendations\nA small number of specific, relevant recommendations from former managers or colleagues adds\ncredibility and helps validate claimed skills."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.25
+    },
+    {
+      "id": "Q038",
+      "question": "What is the recommended structure for a LinkedIn 'About' section?",
+      "category": "LinkedIn Branding",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "linkedin_branding.pdf",
+      "retrieved_documents": [
+        {
+          "source": "linkedin_branding.pdf",
+          "page": 0,
+          "content": "Linkedin Branding\nLitmus V2 career/resume RAG knowledge-base document.\nAbout section\nA strong LinkedIn About section opens with a hook, summarizes key skills and experience, and ends with\na call to action or invitation to connect, using a first-person conversational tone.\nHeadline\nA professional headline appears with a person's name across LinkedIn, including search results. Specialty\nkeywords and a value proposition increase recruiter discoverability.\nOpen to Work"
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Informational interview\nAn informational interview is a casual, low-pressure conversation with a professional to learn about a role\nor industry, not to directly ask for a job.\nLinkedIn updates\nDuring an active search, keep LinkedIn continuously updated and ideally revisit it every few weeks,\nincluding the headline, summary, and recent accomplishments.\nTargeted applications\nHighly targeted applications allow resumes and cover letters to be tailored closely to each role, improving"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "section like full-time roles, using accomplishment-driven and quantified bullets. Relevant coursework,\ncertifications, and personal projects can strengthen the resume.\nReferences\nModern resumes should omit a references section. “References available upon request” is unnecessary\nand outdated; employers can request references separately.\nSummary versus objective\nA resume summary highlights existing experience and achievements and suits experienced candidates. A"
+        },
+        {
+          "source": "ats_optimization.pdf",
+          "page": 0,
+          "content": "Section headings\nUse conventional headings such as Work Experience, Experience, Education, and Skills. Creative\nheadings such as “My Journey” may be ignored or parsed incorrectly.\nKeyword stuffing\nLegitimate ATS optimization naturally integrates relevant, truthful keywords into real experience and skills.\nKeyword stuffing unnaturally repeats or hides keywords, including in white or tiny text, to game a score."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.25
+    },
+    {
+      "id": "Q039",
+      "question": "Why does a professional headline on LinkedIn matter more than just listing a job title?",
+      "category": "LinkedIn Branding",
+      "type": "inferential",
+      "difficulty": "medium",
+      "expected_document": "linkedin_branding.pdf",
+      "retrieved_documents": [
+        {
+          "source": "linkedin_branding.pdf",
+          "page": 0,
+          "content": "Linkedin Branding\nLitmus V2 career/resume RAG knowledge-base document.\nAbout section\nA strong LinkedIn About section opens with a hook, summarizes key skills and experience, and ends with\na call to action or invitation to connect, using a first-person conversational tone.\nHeadline\nA professional headline appears with a person's name across LinkedIn, including search results. Specialty\nkeywords and a value proposition increase recruiter discoverability.\nOpen to Work"
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Informational interview\nAn informational interview is a casual, low-pressure conversation with a professional to learn about a role\nor industry, not to directly ask for a job.\nLinkedIn updates\nDuring an active search, keep LinkedIn continuously updated and ideally revisit it every few weeks,\nincluding the headline, summary, and recent accomplishments.\nTargeted applications\nHighly targeted applications allow resumes and cover letters to be tailored closely to each role, improving"
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Job Search Strategy\nLitmus V2 career/resume RAG knowledge-base document.\nHidden job market\nThe hidden job market refers to openings filled through networking, referrals, or internal promotion rather\nthan public advertising.\nNetworking\nNetworking can surface hidden opportunities and provide internal referrals. Referrals frequently receive\npriority screening compared with general careers-page applications.\nInformational interview"
+        },
+        {
+          "source": "cover_letters.pdf",
+          "page": 0,
+          "content": "Cover Letters\nLitmus V2 career/resume RAG knowledge-base document.\nLength\nA cover letter should generally fit on one page and usually contain three to four focused paragraphs.\nPurpose\nA cover letter should complement the resume by adding narrative context, motivation, personality, and\ncultural fit rather than repeating the resume.\nOpening\nA strong opening grabs attention, states the specific role, and briefly conveys genuine enthusiasm or a\ncompelling reason for interest in the company."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.25
+    },
+    {
+      "id": "Q040",
+      "question": "What is the benefit of turning on the 'Open to Work' feature on LinkedIn?",
+      "category": "LinkedIn Branding",
+      "type": "factual",
+      "difficulty": "medium",
+      "expected_document": "linkedin_branding.pdf",
+      "retrieved_documents": [
+        {
+          "source": "linkedin_branding.pdf",
+          "page": 0,
+          "content": "Linkedin Branding\nLitmus V2 career/resume RAG knowledge-base document.\nAbout section\nA strong LinkedIn About section opens with a hook, summarizes key skills and experience, and ends with\na call to action or invitation to connect, using a first-person conversational tone.\nHeadline\nA professional headline appears with a person's name across LinkedIn, including search results. Specialty\nkeywords and a value proposition increase recruiter discoverability.\nOpen to Work"
+        },
+        {
+          "source": "linkedin_branding.pdf",
+          "page": 0,
+          "content": "Open to Work\nOpen to Work signals active job seeking to recruiters and can increase visibility in recruiter search results\nand inbound outreach.\nRecommendations\nA small number of specific, relevant recommendations from former managers or colleagues adds\ncredibility and helps validate claimed skills."
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Informational interview\nAn informational interview is a casual, low-pressure conversation with a professional to learn about a role\nor industry, not to directly ask for a job.\nLinkedIn updates\nDuring an active search, keep LinkedIn continuously updated and ideally revisit it every few weeks,\nincluding the headline, summary, and recent accomplishments.\nTargeted applications\nHighly targeted applications allow resumes and cover letters to be tailored closely to each role, improving"
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Job Search Strategy\nLitmus V2 career/resume RAG knowledge-base document.\nHidden job market\nThe hidden job market refers to openings filled through networking, referrals, or internal promotion rather\nthan public advertising.\nNetworking\nNetworking can surface hidden opportunities and provide internal referrals. Referrals frequently receive\npriority screening compared with general careers-page applications.\nInformational interview"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q041",
+      "question": "Should a candidate request recommendations on LinkedIn from past colleagues?",
+      "category": "LinkedIn Branding",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "linkedin_branding.pdf",
+      "retrieved_documents": [
+        {
+          "source": "linkedin_branding.pdf",
+          "page": 0,
+          "content": "Open to Work\nOpen to Work signals active job seeking to recruiters and can increase visibility in recruiter search results\nand inbound outreach.\nRecommendations\nA small number of specific, relevant recommendations from former managers or colleagues adds\ncredibility and helps validate claimed skills."
+        },
+        {
+          "source": "linkedin_branding.pdf",
+          "page": 0,
+          "content": "Linkedin Branding\nLitmus V2 career/resume RAG knowledge-base document.\nAbout section\nA strong LinkedIn About section opens with a hook, summarizes key skills and experience, and ends with\na call to action or invitation to connect, using a first-person conversational tone.\nHeadline\nA professional headline appears with a person's name across LinkedIn, including search results. Specialty\nkeywords and a value proposition increase recruiter discoverability.\nOpen to Work"
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Informational interview\nAn informational interview is a casual, low-pressure conversation with a professional to learn about a role\nor industry, not to directly ask for a job.\nLinkedIn updates\nDuring an active search, keep LinkedIn continuously updated and ideally revisit it every few weeks,\nincluding the headline, summary, and recent accomplishments.\nTargeted applications\nHighly targeted applications allow resumes and cover letters to be tailored closely to each role, improving"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "section like full-time roles, using accomplishment-driven and quantified bullets. Relevant coursework,\ncertifications, and personal projects can strengthen the resume.\nReferences\nModern resumes should omit a references section. “References available upon request” is unnecessary\nand outdated; employers can request references separately.\nSummary versus objective\nA resume summary highlights existing experience and achievements and suits experienced candidates. A"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q042",
+      "question": "When is the best time to negotiate salary in a hiring process?",
+      "category": "Salary Negotiation",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "salary_negotiation.pdf",
+      "retrieved_documents": [
+        {
+          "source": "salary_negotiation.pdf",
+          "page": 0,
+          "content": "Salary Negotiation\nLitmus V2 career/resume RAG knowledge-base document.\nTiming\nThe best time to negotiate salary is after receiving a formal offer and before accepting it, when the\ncandidate generally has the most leverage.\nEmployer-first anchoring\nLetting the employer state a figure first can avoid anchoring too low; naming a number first risks anchoring\nbelow the employer’s budget.\nOther negotiable elements"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Technical screening\nA technical screening verifies baseline technical competency early, often through a short coding or\nknowledge-based call, before longer onsite or panel interviews.\nSalary timing\nSalary negotiation is generally reserved for after a formal offer rather than early interview rounds.\nAfter interview\nWithin 24 hours, send a personalized thank-you email, reiterate interest, and reference something specific\ndiscussed.\nBehavioral vs technical"
+        },
+        {
+          "source": "salary_negotiation.pdf",
+          "page": 0,
+          "content": "Other negotiable elements\nNegotiable elements can include signing bonus, equity or stock options, remote/flexible work, vacation\ndays, start date, professional development budget, and other benefits.\nMarket research\nResearch comparable market and industry salary data before negotiating to provide a factual,\ndata-backed basis for a counteroffer."
+        },
+        {
+          "source": "test_policy.pdf",
+          "page": 0,
+          "content": "Company working hours are from 9 AM to 6 PM."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q043",
+      "question": "Why is it often recommended to let the employer state a number first during salary discussions?",
+      "category": "Salary Negotiation",
+      "type": "inferential",
+      "difficulty": "medium",
+      "expected_document": "salary_negotiation.pdf",
+      "retrieved_documents": [
+        {
+          "source": "salary_negotiation.pdf",
+          "page": 0,
+          "content": "Salary Negotiation\nLitmus V2 career/resume RAG knowledge-base document.\nTiming\nThe best time to negotiate salary is after receiving a formal offer and before accepting it, when the\ncandidate generally has the most leverage.\nEmployer-first anchoring\nLetting the employer state a figure first can avoid anchoring too low; naming a number first risks anchoring\nbelow the employer’s budget.\nOther negotiable elements"
+        },
+        {
+          "source": "salary_negotiation.pdf",
+          "page": 0,
+          "content": "Other negotiable elements\nNegotiable elements can include signing bonus, equity or stock options, remote/flexible work, vacation\ndays, start date, professional development budget, and other benefits.\nMarket research\nResearch comparable market and industry salary data before negotiating to provide a factual,\ndata-backed basis for a counteroffer."
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Technical screening\nA technical screening verifies baseline technical competency early, often through a short coding or\nknowledge-based call, before longer onsite or panel interviews.\nSalary timing\nSalary negotiation is generally reserved for after a formal offer rather than early interview rounds.\nAfter interview\nWithin 24 hours, send a personalized thank-you email, reiterate interest, and reference something specific\ndiscussed.\nBehavioral vs technical"
+        },
+        {
+          "source": "test_leave_policy.pdf",
+          "page": 0,
+          "content": "Employees receive 20 annual leave days."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q044",
+      "question": "Besides base salary, what other elements can be negotiated in a job offer?",
+      "category": "Salary Negotiation",
+      "type": "factual",
+      "difficulty": "medium",
+      "expected_document": "salary_negotiation.pdf",
+      "retrieved_documents": [
+        {
+          "source": "salary_negotiation.pdf",
+          "page": 0,
+          "content": "Other negotiable elements\nNegotiable elements can include signing bonus, equity or stock options, remote/flexible work, vacation\ndays, start date, professional development budget, and other benefits.\nMarket research\nResearch comparable market and industry salary data before negotiating to provide a factual,\ndata-backed basis for a counteroffer."
+        },
+        {
+          "source": "salary_negotiation.pdf",
+          "page": 0,
+          "content": "Salary Negotiation\nLitmus V2 career/resume RAG knowledge-base document.\nTiming\nThe best time to negotiate salary is after receiving a formal offer and before accepting it, when the\ncandidate generally has the most leverage.\nEmployer-first anchoring\nLetting the employer state a figure first can avoid anchoring too low; naming a number first risks anchoring\nbelow the employer’s budget.\nOther negotiable elements"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Technical screening\nA technical screening verifies baseline technical competency early, often through a short coding or\nknowledge-based call, before longer onsite or panel interviews.\nSalary timing\nSalary negotiation is generally reserved for after a formal offer rather than early interview rounds.\nAfter interview\nWithin 24 hours, send a personalized thank-you email, reiterate interest, and reference something specific\ndiscussed.\nBehavioral vs technical"
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Job Search Strategy\nLitmus V2 career/resume RAG knowledge-base document.\nHidden job market\nThe hidden job market refers to openings filled through networking, referrals, or internal promotion rather\nthan public advertising.\nNetworking\nNetworking can surface hidden opportunities and provide internal referrals. Referrals frequently receive\npriority screening compared with general careers-page applications.\nInformational interview"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q045",
+      "question": "Should a candidate research market salary data before entering a negotiation?",
+      "category": "Salary Negotiation",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "salary_negotiation.pdf",
+      "retrieved_documents": [
+        {
+          "source": "salary_negotiation.pdf",
+          "page": 0,
+          "content": "Other negotiable elements\nNegotiable elements can include signing bonus, equity or stock options, remote/flexible work, vacation\ndays, start date, professional development budget, and other benefits.\nMarket research\nResearch comparable market and industry salary data before negotiating to provide a factual,\ndata-backed basis for a counteroffer."
+        },
+        {
+          "source": "salary_negotiation.pdf",
+          "page": 0,
+          "content": "Salary Negotiation\nLitmus V2 career/resume RAG knowledge-base document.\nTiming\nThe best time to negotiate salary is after receiving a formal offer and before accepting it, when the\ncandidate generally has the most leverage.\nEmployer-first anchoring\nLetting the employer state a figure first can avoid anchoring too low; naming a number first risks anchoring\nbelow the employer’s budget.\nOther negotiable elements"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Technical screening\nA technical screening verifies baseline technical competency early, often through a short coding or\nknowledge-based call, before longer onsite or panel interviews.\nSalary timing\nSalary negotiation is generally reserved for after a formal offer rather than early interview rounds.\nAfter interview\nWithin 24 hours, send a personalized thank-you email, reiterate interest, and reference something specific\ndiscussed.\nBehavioral vs technical"
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Job Search Strategy\nLitmus V2 career/resume RAG knowledge-base document.\nHidden job market\nThe hidden job market refers to openings filled through networking, referrals, or internal promotion rather\nthan public advertising.\nNetworking\nNetworking can surface hidden opportunities and provide internal referrals. Referrals frequently receive\npriority screening compared with general careers-page applications.\nInformational interview"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q046",
+      "question": "What is a key resume adjustment for candidates applying to fully remote roles?",
+      "category": "Remote Work",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "remote_work_and_career_pivot.pdf",
+      "retrieved_documents": [
+        {
+          "source": "remote_work_and_career_pivot.pdf",
+          "page": 0,
+          "content": "Remote Work And Career Pivot\nLitmus V2 career/resume RAG knowledge-base document.\nRemote-role resume\nHighlight prior remote work and skills such as self-management, asynchronous communication, and\ncollaboration tools.\nCareer pivoting\nCareer pivoting means making a significant change in industry, function, or role while leveraging\ntransferable skills rather than starting entirely from scratch.\nPersonal project portfolio"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "resume objective states career goals and is more suited to students, entry-level applicants, or career\nchangers."
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "Resume Writing\nLitmus V2 career/resume RAG knowledge-base document.\nResume length\nCandidates with fewer than 10 years of experience should generally keep their resume to one page.\nSenior professionals may use no more than two pages.\nResume photos\nFor the US, UK, Canada, and Australia, including a photo on a resume is discouraged because it can\ntrigger unconscious bias and is not standard practice.\nQuantified achievements"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "section like full-time roles, using accomplishment-driven and quantified bullets. Relevant coursework,\ncertifications, and personal projects can strengthen the resume.\nReferences\nModern resumes should omit a references section. “References available upon request” is unnecessary\nand outdated; employers can request references separately.\nSummary versus objective\nA resume summary highlights existing experience and achievements and suits experienced candidates. A"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.25
+    },
+    {
+      "id": "Q047",
+      "question": "What is 'career pivoting' typically defined as?",
+      "category": "Remote Work",
+      "type": "factual",
+      "difficulty": "medium",
+      "expected_document": "remote_work_and_career_pivot.pdf",
+      "retrieved_documents": [
+        {
+          "source": "remote_work_and_career_pivot.pdf",
+          "page": 0,
+          "content": "Remote Work And Career Pivot\nLitmus V2 career/resume RAG knowledge-base document.\nRemote-role resume\nHighlight prior remote work and skills such as self-management, asynchronous communication, and\ncollaboration tools.\nCareer pivoting\nCareer pivoting means making a significant change in industry, function, or role while leveraging\ntransferable skills rather than starting entirely from scratch.\nPersonal project portfolio"
+        },
+        {
+          "source": "remote_work_and_career_pivot.pdf",
+          "page": 0,
+          "content": "Personal project portfolio\nFor a transition into a technical field without formal experience, a personal project portfolio provides\ntangible evidence of applied skills for hiring managers to evaluate.\nCareer growth trajectory\nCareer growth trajectory is the pattern of increasing responsibility, scope, or seniority across roles,\nsignaling upward momentum."
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "resume objective states career goals and is more suited to students, entry-level applicants, or career\nchangers."
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "Job Search Strategy\nLitmus V2 career/resume RAG knowledge-base document.\nHidden job market\nThe hidden job market refers to openings filled through networking, referrals, or internal promotion rather\nthan public advertising.\nNetworking\nNetworking can surface hidden opportunities and provide internal referrals. Referrals frequently receive\npriority screening compared with general careers-page applications.\nInformational interview"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q048",
+      "question": "Why might a candidate build a personal project portfolio when transitioning into a technical field without formal work experience in it?",
+      "category": "Remote Work",
+      "type": "inferential",
+      "difficulty": "medium",
+      "expected_document": "remote_work_and_career_pivot.pdf",
+      "retrieved_documents": [
+        {
+          "source": "remote_work_and_career_pivot.pdf",
+          "page": 0,
+          "content": "Personal project portfolio\nFor a transition into a technical field without formal experience, a personal project portfolio provides\ntangible evidence of applied skills for hiring managers to evaluate.\nCareer growth trajectory\nCareer growth trajectory is the pattern of increasing responsibility, scope, or seniority across roles,\nsignaling upward momentum."
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "resume objective states career goals and is more suited to students, entry-level applicants, or career\nchangers."
+        },
+        {
+          "source": "remote_work_and_career_pivot.pdf",
+          "page": 0,
+          "content": "Remote Work And Career Pivot\nLitmus V2 career/resume RAG knowledge-base document.\nRemote-role resume\nHighlight prior remote work and skills such as self-management, asynchronous communication, and\ncollaboration tools.\nCareer pivoting\nCareer pivoting means making a significant change in industry, function, or role while leveraging\ntransferable skills rather than starting entirely from scratch.\nPersonal project portfolio"
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "ATS matching and application quality. Generic mass applications often have lower response rates per\napplication.\nCareer changers\nCareer changers should emphasize transferable skills, relevant projects or certifications, and a clear\nnarrative connecting previous experience to the new field.\nFirst step\nBegin with self-assessment: clarify career goals, target roles, target industries, and non-negotiables before\napplying."
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q049",
+      "question": "What does 'career growth trajectory' typically refer to on a resume?",
+      "category": "Remote Work",
+      "type": "factual",
+      "difficulty": "easy",
+      "expected_document": "remote_work_and_career_pivot.pdf",
+      "retrieved_documents": [
+        {
+          "source": "remote_work_and_career_pivot.pdf",
+          "page": 0,
+          "content": "Personal project portfolio\nFor a transition into a technical field without formal experience, a personal project portfolio provides\ntangible evidence of applied skills for hiring managers to evaluate.\nCareer growth trajectory\nCareer growth trajectory is the pattern of increasing responsibility, scope, or seniority across roles,\nsignaling upward momentum."
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "resume objective states career goals and is more suited to students, entry-level applicants, or career\nchangers."
+        },
+        {
+          "source": "remote_work_and_career_pivot.pdf",
+          "page": 0,
+          "content": "Remote Work And Career Pivot\nLitmus V2 career/resume RAG knowledge-base document.\nRemote-role resume\nHighlight prior remote work and skills such as self-management, asynchronous communication, and\ncollaboration tools.\nCareer pivoting\nCareer pivoting means making a significant change in industry, function, or role while leveraging\ntransferable skills rather than starting entirely from scratch.\nPersonal project portfolio"
+        },
+        {
+          "source": "resume_writing.pdf",
+          "page": 0,
+          "content": "strict chronological timeline. Functional resumes group experience by skill category and can help\ncandidates with employment gaps or frequent job changes.\nAction verb tense\nUse past-tense action verbs such as Led, Built, and Managed for previous positions, and present-tense\nverbs such as Lead, Build, and Manage for a current role.\nInternships without full-time experience\nEntry-level candidates can place Skills or Projects near the top. Internships can appear in the Experience"
+        }
+      ],
+      "hit_rate_at_k": 1.0,
+      "mrr": 1.0,
+      "context_precision": 0.5
+    },
+    {
+      "id": "Q050",
+      "question": "What is the current interest rate set by the Federal Reserve?",
+      "category": "Out of Scope",
+      "type": "out_of_scope",
+      "difficulty": "hard",
+      "expected_document": null,
+      "retrieved_documents": [
+        {
+          "source": "salary_negotiation.pdf",
+          "page": 0,
+          "content": "Other negotiable elements\nNegotiable elements can include signing bonus, equity or stock options, remote/flexible work, vacation\ndays, start date, professional development budget, and other benefits.\nMarket research\nResearch comparable market and industry salary data before negotiating to provide a factual,\ndata-backed basis for a counteroffer."
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Technical screening\nA technical screening verifies baseline technical competency early, often through a short coding or\nknowledge-based call, before longer onsite or panel interviews.\nSalary timing\nSalary negotiation is generally reserved for after a formal offer rather than early interview rounds.\nAfter interview\nWithin 24 hours, send a personalized thank-you email, reiterate interest, and reference something specific\ndiscussed.\nBehavioral vs technical"
+        },
+        {
+          "source": "test_policy.pdf",
+          "page": 0,
+          "content": "Company working hours are from 9 AM to 6 PM."
+        },
+        {
+          "source": "job_search_strategy.pdf",
+          "page": 0,
+          "content": "ATS matching and application quality. Generic mass applications often have lower response rates per\napplication.\nCareer changers\nCareer changers should emphasize transferable skills, relevant projects or certifications, and a clear\nnarrative connecting previous experience to the new field.\nFirst step\nBegin with self-assessment: clarify career goals, target roles, target industries, and non-negotiables before\napplying."
+        }
+      ],
+      "hit_rate_at_k": 0.0,
+      "mrr": 0.0,
+      "context_precision": 0.0
+    }
+  ]
+}

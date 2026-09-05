@@ -1,0 +1,606 @@
+{
+  "dataset_name": "RAG Golden Evaluation Dataset",
+  "version": "1.0",
+  "total_questions": 50,
+  "domain": "career/resume-assistant",
+  "questions": [
+    {
+      "id": "Q001",
+      "category": "Resume Writing",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "What is the ideal length for a resume with under 10 years of experience?",
+      "ground_truth": "One page is generally recommended for candidates with fewer than 10 years of professional experience.",
+      "reference_context": [
+        "resume_writing.pdf"
+      ],
+      "reference_document": "resume_writing.pdf"
+    },
+    {
+      "id": "Q002",
+      "category": "Resume Writing",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "Should a resume include a photo?",
+      "ground_truth": "No, resumes for the US and most English-speaking job markets should not include a photo, as it can introduce bias and is not standard practice.",
+      "reference_context": [
+        "resume_writing.pdf"
+      ],
+      "reference_document": "resume_writing.pdf"
+    },
+    {
+      "id": "Q003",
+      "category": "Resume Writing",
+      "type": "inferential",
+      "difficulty": "medium",
+      "question": "Why are quantified achievements preferred over generic duty statements on a resume?",
+      "ground_truth": "Quantified achievements demonstrate measurable impact and let a hiring manager quickly gauge the scale and value of a candidate's contributions, whereas duty statements only describe responsibilities without evidence of results.",
+      "reference_context": [
+        "resume_writing.pdf"
+      ],
+      "reference_document": "resume_writing.pdf"
+    },
+    {
+      "id": "Q004",
+      "category": "Resume Writing",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "What resume format is best for someone with employment gaps?",
+      "ground_truth": "A functional or combination (hybrid) resume format is best, since it emphasizes skills and accomplishments over a strict chronological timeline.",
+      "reference_context": [
+        "resume_writing.pdf"
+      ],
+      "reference_document": "resume_writing.pdf"
+    },
+    {
+      "id": "Q005",
+      "category": "Resume Writing",
+      "type": "factual",
+      "difficulty": "medium",
+      "question": "What is the recommended action verb tense for past roles versus a current role on a resume?",
+      "ground_truth": "Past roles should use past-tense action verbs, while the current role should use present-tense action verbs.",
+      "reference_context": [
+        "resume_writing.pdf"
+      ],
+      "reference_document": "resume_writing.pdf"
+    },
+    {
+      "id": "Q006",
+      "category": "Resume Writing",
+      "type": "inferential",
+      "difficulty": "hard",
+      "question": "A candidate has three internships but no full-time job. How should they structure their resume to appear competitive for an entry-level role?",
+      "ground_truth": "They should lead with a strong skills or projects section, present internships in the experience section using the same accomplishment-driven format as full-time roles, and include relevant coursework, certifications, or personal projects to fill out the page.",
+      "reference_context": [
+        "resume_writing.pdf"
+      ],
+      "reference_document": "resume_writing.pdf"
+    },
+    {
+      "id": "Q007",
+      "category": "Resume Writing",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "Is it necessary to include references on a resume?",
+      "ground_truth": "No, references should not be listed on a resume; 'References available upon request' is also unnecessary and considered outdated.",
+      "reference_context": [
+        "resume_writing.pdf"
+      ],
+      "reference_document": "resume_writing.pdf"
+    },
+    {
+      "id": "Q008",
+      "category": "Resume Writing",
+      "type": "comparative",
+      "difficulty": "medium",
+      "question": "What is the difference between a resume summary and a resume objective?",
+      "ground_truth": "A resume summary highlights a candidate's existing experience and key achievements, while a resume objective states the candidate's career goals; summaries are preferred for experienced candidates and objectives are more suited to career changers or entry-level applicants.",
+      "reference_context": [
+        "resume_writing.pdf"
+      ],
+      "reference_document": "resume_writing.pdf"
+    },
+    {
+      "id": "Q009",
+      "category": "ATS Optimization",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "What does ATS stand for in the context of job applications?",
+      "ground_truth": "ATS stands for Applicant Tracking System, the software companies use to collect, scan, and rank resumes before a human reviews them.",
+      "reference_context": [
+        "ats_optimization.pdf"
+      ],
+      "reference_document": "ats_optimization.pdf"
+    },
+    {
+      "id": "Q010",
+      "category": "ATS Optimization",
+      "type": "factual",
+      "difficulty": "medium",
+      "question": "Why should complex tables and graphics be avoided in a resume intended for ATS scanning?",
+      "ground_truth": "Many ATS parsers cannot correctly read text inside tables, columns, text boxes, or embedded images, which can cause content to be dropped or misread, hurting the candidate's match score.",
+      "reference_context": [
+        "ats_optimization.pdf"
+      ],
+      "reference_document": "ats_optimization.pdf"
+    },
+    {
+      "id": "Q011",
+      "category": "ATS Optimization",
+      "type": "inferential",
+      "difficulty": "medium",
+      "question": "If a job description repeatedly uses the term 'cross-functional collaboration,' what should a candidate do on their resume?",
+      "ground_truth": "The candidate should incorporate the exact phrase 'cross-functional collaboration' naturally into their resume where it truthfully applies, since ATS keyword matching often looks for exact or near-exact phrase matches from the job description.",
+      "reference_context": [
+        "ats_optimization.pdf"
+      ],
+      "reference_document": "ats_optimization.pdf"
+    },
+    {
+      "id": "Q012",
+      "category": "ATS Optimization",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "What file format is generally safest for submitting a resume through an online application portal?",
+      "ground_truth": "A .docx or a text-based PDF is generally safest, as both are reliably parsed by most ATS platforms.",
+      "reference_context": [
+        "ats_optimization.pdf"
+      ],
+      "reference_document": "ats_optimization.pdf"
+    },
+    {
+      "id": "Q013",
+      "category": "ATS Optimization",
+      "type": "factual",
+      "difficulty": "medium",
+      "question": "Should a candidate use standard section headings like 'Experience' and 'Education' on an ATS-optimized resume?",
+      "ground_truth": "Yes, standard section headings should be used because ATS software is trained to recognize conventional headings, and creative headings like 'My Journey' may not be parsed correctly.",
+      "reference_context": [
+        "ats_optimization.pdf"
+      ],
+      "reference_document": "ats_optimization.pdf"
+    },
+    {
+      "id": "Q014",
+      "category": "ATS Optimization",
+      "type": "multi_hop",
+      "difficulty": "hard",
+      "question": "How does keyword stuffing differ from legitimate ATS optimization, and why can stuffing backfire?",
+      "ground_truth": "Legitimate ATS optimization means naturally weaving relevant, truthful keywords from the job description into real experience, while keyword stuffing means unnaturally repeating or hiding keywords purely to game the score; stuffing can backfire because many modern ATS platforms flag unnatural keyword density and recruiters who review the resume manually will notice the lack of genuine context.",
+      "reference_context": [
+        "ats_optimization.pdf"
+      ],
+      "reference_document": "ats_optimization.pdf"
+    },
+    {
+      "id": "Q015",
+      "category": "ATS Optimization",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "Can an ATS reject a resume before a human ever sees it?",
+      "ground_truth": "Yes, many ATS platforms score and rank resumes automatically, and resumes below a certain match threshold may never be surfaced to a recruiter.",
+      "reference_context": [
+        "ats_optimization.pdf"
+      ],
+      "reference_document": "ats_optimization.pdf"
+    },
+    {
+      "id": "Q016",
+      "category": "Cover Letters",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "How long should a cover letter typically be?",
+      "ground_truth": "A cover letter should typically be no more than one page, usually three to four short paragraphs.",
+      "reference_context": [
+        "cover_letters.pdf"
+      ],
+      "reference_document": "cover_letters.pdf"
+    },
+    {
+      "id": "Q017",
+      "category": "Cover Letters",
+      "type": "inferential",
+      "difficulty": "medium",
+      "question": "Why is it considered a mistake to restate the entire resume in a cover letter?",
+      "ground_truth": "Restating the resume wastes the opportunity to add new context, such as motivation and cultural fit, and makes the letter redundant and less engaging to the reader, who has already seen the resume.",
+      "reference_context": [
+        "cover_letters.pdf"
+      ],
+      "reference_document": "cover_letters.pdf"
+    },
+    {
+      "id": "Q018",
+      "category": "Cover Letters",
+      "type": "factual",
+      "difficulty": "medium",
+      "question": "What should the opening paragraph of a strong cover letter accomplish?",
+      "ground_truth": "The opening paragraph should grab attention, state the specific role being applied for, and briefly convey enthusiasm or a compelling reason for interest in the company.",
+      "reference_context": [
+        "cover_letters.pdf"
+      ],
+      "reference_document": "cover_letters.pdf"
+    },
+    {
+      "id": "Q019",
+      "category": "Cover Letters",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "Is it acceptable to use a generic, unaddressed cover letter for every job application?",
+      "ground_truth": "No, cover letters should be tailored to each specific role and company, and addressed to a named person whenever possible.",
+      "reference_context": [
+        "cover_letters.pdf"
+      ],
+      "reference_document": "cover_letters.pdf"
+    },
+    {
+      "id": "Q020",
+      "category": "Cover Letters",
+      "type": "factual",
+      "difficulty": "medium",
+      "question": "What tone is generally recommended for a cover letter?",
+      "ground_truth": "A professional yet conversational tone is recommended, avoiding both overly stiff corporate language and excessive casualness.",
+      "reference_context": [
+        "cover_letters.pdf"
+      ],
+      "reference_document": "cover_letters.pdf"
+    },
+    {
+      "id": "Q021",
+      "category": "Interview Prep",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "What does the STAR method stand for in interview answers?",
+      "ground_truth": "STAR stands for Situation, Task, Action, and Result, a structure used to answer behavioral interview questions.",
+      "reference_context": [
+        "interview_prep.pdf"
+      ],
+      "reference_document": "interview_prep.pdf"
+    },
+    {
+      "id": "Q022",
+      "category": "Interview Prep",
+      "type": "inferential",
+      "difficulty": "medium",
+      "question": "Why does the STAR method help candidates give stronger behavioral interview answers?",
+      "ground_truth": "It forces candidates to provide context, explain their specific role, describe concrete actions taken, and highlight measurable outcomes, which keeps the answer structured and prevents vague or rambling responses.",
+      "reference_context": [
+        "interview_prep.pdf"
+      ],
+      "reference_document": "interview_prep.pdf"
+    },
+    {
+      "id": "Q023",
+      "category": "Interview Prep",
+      "type": "factual",
+      "difficulty": "medium",
+      "question": "What is a common mistake candidates make when answering 'What is your greatest weakness?'",
+      "ground_truth": "A common mistake is giving a disguised strength, such as 'I work too hard,' instead of an honest, self-aware weakness paired with concrete steps taken to improve it.",
+      "reference_context": [
+        "interview_prep.pdf"
+      ],
+      "reference_document": "interview_prep.pdf"
+    },
+    {
+      "id": "Q024",
+      "category": "Interview Prep",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "Should a candidate prepare questions to ask the interviewer at the end of the interview?",
+      "ground_truth": "Yes, candidates should always prepare thoughtful questions to ask, as failing to do so can signal a lack of genuine interest.",
+      "reference_context": [
+        "interview_prep.pdf"
+      ],
+      "reference_document": "interview_prep.pdf"
+    },
+    {
+      "id": "Q025",
+      "category": "Interview Prep",
+      "type": "inferential",
+      "difficulty": "hard",
+      "question": "A candidate is asked a system design question and immediately jumps to writing code. What is the issue with this approach and what should they do instead?",
+      "ground_truth": "Jumping straight to code skips clarifying requirements and discussing trade-offs, which are what interviewers are actually evaluating in a system design question; the candidate should first clarify requirements and constraints, then discuss the high-level architecture and trade-offs before any implementation detail.",
+      "reference_context": [
+        "interview_prep.pdf"
+      ],
+      "reference_document": "interview_prep.pdf"
+    },
+    {
+      "id": "Q026",
+      "category": "Interview Prep",
+      "type": "factual",
+      "difficulty": "medium",
+      "question": "What is the purpose of a technical screening round in a hiring process?",
+      "ground_truth": "A technical screening round is used to verify a candidate's baseline technical competency early in the process, before investing time in longer onsite or panel interviews.",
+      "reference_context": [
+        "interview_prep.pdf"
+      ],
+      "reference_document": "interview_prep.pdf"
+    },
+    {
+      "id": "Q027",
+      "category": "Interview Prep",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "Is it appropriate to negotiate salary during the very first interview?",
+      "ground_truth": "No, salary negotiation is generally reserved for after an offer has been made, not during early interview rounds.",
+      "reference_context": [
+        "interview_prep.pdf"
+      ],
+      "reference_document": "interview_prep.pdf"
+    },
+    {
+      "id": "Q028",
+      "category": "Interview Prep",
+      "type": "factual",
+      "difficulty": "medium",
+      "question": "What should a candidate do within 24 hours of finishing an interview?",
+      "ground_truth": "The candidate should send a personalized thank-you email to the interviewer(s), reiterating interest in the role and referencing something specific discussed during the interview.",
+      "reference_context": [
+        "interview_prep.pdf"
+      ],
+      "reference_document": "interview_prep.pdf"
+    },
+    {
+      "id": "Q029",
+      "category": "Interview Prep",
+      "type": "multi_hop",
+      "difficulty": "hard",
+      "question": "How do behavioral interviews and technical interviews differ in what they are trying to assess, and why might a company use both?",
+      "ground_truth": "Behavioral interviews assess soft skills, past conduct, and cultural fit by examining how a candidate handled real situations, while technical interviews assess hands-on ability to solve domain-specific problems; companies often use both because technical competence alone does not guarantee someone will collaborate well or handle pressure appropriately on the job.",
+      "reference_context": [
+        "interview_prep.pdf"
+      ],
+      "reference_document": "interview_prep.pdf"
+    },
+    {
+      "id": "Q030",
+      "category": "Interview Prep",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "What is a mock interview?",
+      "ground_truth": "A mock interview is a practice interview, often conducted with a friend, mentor, or coach, meant to simulate the real interview experience and build confidence.",
+      "reference_context": [
+        "interview_prep.pdf"
+      ],
+      "reference_document": "interview_prep.pdf"
+    },
+    {
+      "id": "Q031",
+      "category": "Job Search Strategy",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "What is the 'hidden job market'?",
+      "ground_truth": "The hidden job market refers to job openings that are filled through networking, referrals, or internal promotion rather than being publicly advertised.",
+      "reference_context": [
+        "job_search_strategy.pdf"
+      ],
+      "reference_document": "job_search_strategy.pdf"
+    },
+    {
+      "id": "Q032",
+      "category": "Job Search Strategy",
+      "type": "inferential",
+      "difficulty": "medium",
+      "question": "Why is networking often considered more effective than cold-applying to job postings?",
+      "ground_truth": "Networking can surface hidden opportunities before they are publicly posted and often comes with an internal referral, which many companies prioritize over anonymous applications, giving networked candidates a higher chance of getting an interview.",
+      "reference_context": [
+        "job_search_strategy.pdf"
+      ],
+      "reference_document": "job_search_strategy.pdf"
+    },
+    {
+      "id": "Q033",
+      "category": "Job Search Strategy",
+      "type": "factual",
+      "difficulty": "medium",
+      "question": "What is an informational interview?",
+      "ground_truth": "An informational interview is a casual conversation requested with a professional in a target field or company to learn about their role and industry, not to directly ask for a job.",
+      "reference_context": [
+        "job_search_strategy.pdf"
+      ],
+      "reference_document": "job_search_strategy.pdf"
+    },
+    {
+      "id": "Q034",
+      "category": "Job Search Strategy",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "How often should a job seeker update their LinkedIn profile while actively job hunting?",
+      "ground_truth": "A job seeker should keep their LinkedIn profile continuously updated, ideally revisiting it every few weeks during an active search.",
+      "reference_context": [
+        "job_search_strategy.pdf"
+      ],
+      "reference_document": "job_search_strategy.pdf"
+    },
+    {
+      "id": "Q035",
+      "category": "Job Search Strategy",
+      "type": "inferential",
+      "difficulty": "medium",
+      "question": "Why might applying to a smaller number of highly targeted jobs be more effective than mass-applying to many postings?",
+      "ground_truth": "Targeted applications allow the candidate to tailor the resume and cover letter closely to each role's requirements, improving both ATS match scores and the quality of the application, whereas mass-applying with generic materials usually produces a lower response rate per application.",
+      "reference_context": [
+        "job_search_strategy.pdf"
+      ],
+      "reference_document": "job_search_strategy.pdf"
+    },
+    {
+      "id": "Q036",
+      "category": "Job Search Strategy",
+      "type": "factual",
+      "difficulty": "medium",
+      "question": "What is a career changer expected to emphasize when targeting a new industry?",
+      "ground_truth": "A career changer should emphasize transferable skills, relevant projects or certifications, and a clear narrative connecting their past experience to the new field.",
+      "reference_context": [
+        "job_search_strategy.pdf"
+      ],
+      "reference_document": "job_search_strategy.pdf"
+    },
+    {
+      "id": "Q037",
+      "category": "Job Search Strategy",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "What is the recommended first step before starting a job search?",
+      "ground_truth": "The recommended first step is self-assessment: clarifying career goals, target roles, and non-negotiables before applying to jobs.",
+      "reference_context": [
+        "job_search_strategy.pdf"
+      ],
+      "reference_document": "job_search_strategy.pdf"
+    },
+    {
+      "id": "Q038",
+      "category": "LinkedIn Branding",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "What is the recommended structure for a LinkedIn 'About' section?",
+      "ground_truth": "The About section should open with a strong hook, summarize key skills and experience, and end with a call to action, written in a first-person, conversational tone.",
+      "reference_context": [
+        "linkedin_branding.pdf"
+      ],
+      "reference_document": "linkedin_branding.pdf"
+    },
+    {
+      "id": "Q039",
+      "category": "LinkedIn Branding",
+      "type": "inferential",
+      "difficulty": "medium",
+      "question": "Why does a professional headline on LinkedIn matter more than just listing a job title?",
+      "ground_truth": "A well-crafted headline appears in search results and connection requests, so a headline that includes specialty keywords and value proposition increases visibility to recruiters searching for specific skills, unlike a plain job title alone.",
+      "reference_context": [
+        "linkedin_branding.pdf"
+      ],
+      "reference_document": "linkedin_branding.pdf"
+    },
+    {
+      "id": "Q040",
+      "category": "LinkedIn Branding",
+      "type": "factual",
+      "difficulty": "medium",
+      "question": "What is the benefit of turning on the 'Open to Work' feature on LinkedIn?",
+      "ground_truth": "It signals to recruiters that a candidate is actively looking, which can increase the number of recruiter messages and visibility in recruiter search results.",
+      "reference_context": [
+        "linkedin_branding.pdf"
+      ],
+      "reference_document": "linkedin_branding.pdf"
+    },
+    {
+      "id": "Q041",
+      "category": "LinkedIn Branding",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "Should a candidate request recommendations on LinkedIn from past colleagues?",
+      "ground_truth": "Yes, requesting a small number of specific, relevant recommendations from past managers or colleagues adds credibility to a LinkedIn profile.",
+      "reference_context": [
+        "linkedin_branding.pdf"
+      ],
+      "reference_document": "linkedin_branding.pdf"
+    },
+    {
+      "id": "Q042",
+      "category": "Salary Negotiation",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "When is the best time to negotiate salary in a hiring process?",
+      "ground_truth": "The best time to negotiate salary is after receiving a formal job offer, before accepting it.",
+      "reference_context": [
+        "salary_negotiation.pdf"
+      ],
+      "reference_document": "salary_negotiation.pdf"
+    },
+    {
+      "id": "Q043",
+      "category": "Salary Negotiation",
+      "type": "inferential",
+      "difficulty": "medium",
+      "question": "Why is it often recommended to let the employer state a number first during salary discussions?",
+      "ground_truth": "Letting the employer name a figure first avoids anchoring the negotiation too low, since the candidate might otherwise undervalue themselves relative to what the employer had budgeted.",
+      "reference_context": [
+        "salary_negotiation.pdf"
+      ],
+      "reference_document": "salary_negotiation.pdf"
+    },
+    {
+      "id": "Q044",
+      "category": "Salary Negotiation",
+      "type": "factual",
+      "difficulty": "medium",
+      "question": "Besides base salary, what other elements can be negotiated in a job offer?",
+      "ground_truth": "Other negotiable elements include signing bonus, equity or stock options, remote work flexibility, vacation days, start date, and professional development budget.",
+      "reference_context": [
+        "salary_negotiation.pdf"
+      ],
+      "reference_document": "salary_negotiation.pdf"
+    },
+    {
+      "id": "Q045",
+      "category": "Salary Negotiation",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "Should a candidate research market salary data before entering a negotiation?",
+      "ground_truth": "Yes, researching comparable market salary data beforehand gives the candidate a factual basis for their counteroffer.",
+      "reference_context": [
+        "salary_negotiation.pdf"
+      ],
+      "reference_document": "salary_negotiation.pdf"
+    },
+    {
+      "id": "Q046",
+      "category": "Remote Work",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "What is a key resume adjustment for candidates applying to fully remote roles?",
+      "ground_truth": "Candidates should highlight prior remote work experience and skills like self-management, asynchronous communication, and use of collaboration tools.",
+      "reference_context": [
+        "remote_work_and_career_pivot.pdf"
+      ],
+      "reference_document": "remote_work_and_career_pivot.pdf"
+    },
+    {
+      "id": "Q047",
+      "category": "Remote Work",
+      "type": "factual",
+      "difficulty": "medium",
+      "question": "What is 'career pivoting' typically defined as?",
+      "ground_truth": "Career pivoting refers to making a significant change in industry, function, or role while leveraging existing transferable skills rather than starting entirely from scratch.",
+      "reference_context": [
+        "remote_work_and_career_pivot.pdf"
+      ],
+      "reference_document": "remote_work_and_career_pivot.pdf"
+    },
+    {
+      "id": "Q048",
+      "category": "Remote Work",
+      "type": "inferential",
+      "difficulty": "medium",
+      "question": "Why might a candidate build a personal project portfolio when transitioning into a technical field without formal work experience in it?",
+      "ground_truth": "A personal project portfolio provides tangible, demonstrable evidence of applied skills that substitutes for a lack of formal work history, giving hiring managers something concrete to evaluate.",
+      "reference_context": [
+        "remote_work_and_career_pivot.pdf"
+      ],
+      "reference_document": "remote_work_and_career_pivot.pdf"
+    },
+    {
+      "id": "Q049",
+      "category": "Remote Work",
+      "type": "factual",
+      "difficulty": "easy",
+      "question": "What does 'career growth trajectory' typically refer to on a resume?",
+      "ground_truth": "It refers to the pattern of increasing responsibility, scope, or seniority a candidate has shown across their past roles.",
+      "reference_context": [
+        "remote_work_and_career_pivot.pdf"
+      ],
+      "reference_document": "remote_work_and_career_pivot.pdf"
+    },
+    {
+      "id": "Q050",
+      "category": "Out of Scope",
+      "type": "out_of_scope",
+      "difficulty": "hard",
+      "question": "What is the current interest rate set by the Federal Reserve?",
+      "ground_truth": "This question is out of scope for a career and job-search knowledge base; the dataset intentionally includes it to test that the RAG system correctly abstains or reports no relevant context rather than hallucinating an answer.",
+      "reference_context": [],
+      "reference_document": null
+    }
+  ]
+}

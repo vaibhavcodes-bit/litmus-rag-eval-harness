@@ -1,0 +1,16 @@
+python-dotenv
+
+langchain
+langchain-community
+langchain-text-splitters
+langchain-chroma
+
+pypdf
+chromadb
+
+sentence-transformers
+
+groq
+langchain-groq
+
+pytest
