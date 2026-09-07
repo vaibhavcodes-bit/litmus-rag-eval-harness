@@ -1,0 +1,77 @@
+[
+  {
+    "id": "V5Q001",
+    "question": "What should a resume summary contain?",
+    "expected_route": "VECTOR"
+  },
+  {
+    "id": "V5Q002",
+    "question": "What makes a cover letter effective?",
+    "expected_route": "VECTOR"
+  },
+  {
+    "id": "V5Q003",
+    "question": "How can I improve my resume for ATS systems?",
+    "expected_route": "VECTOR"
+  },
+  {
+    "id": "V5Q004",
+    "question": "How should I prepare for a behavioral interview?",
+    "expected_route": "VECTOR"
+  },
+  {
+    "id": "V5Q005",
+    "question": "How can I improve my LinkedIn profile?",
+    "expected_route": "VECTOR"
+  },
+  {
+    "id": "V5Q006",
+    "question": "How many remote jobs are available?",
+    "expected_route": "SQL"
+  },
+  {
+    "id": "V5Q007",
+    "question": "How many senior jobs are available?",
+    "expected_route": "SQL"
+  },
+  {
+    "id": "V5Q008",
+    "question": "How many jobs are available in Bangalore?",
+    "expected_route": "SQL"
+  },
+  {
+    "id": "V5Q009",
+    "question": "What is the average maximum salary for senior roles?",
+    "expected_route": "SQL"
+  },
+  {
+    "id": "V5Q010",
+    "question": "Which jobs are available in Bangalore?",
+    "expected_route": "SQL"
+  },
+  {
+    "id": "V5Q011",
+    "question": "What should I consider when negotiating salary?",
+    "expected_route": "VECTOR"
+  },
+  {
+    "id": "V5Q012",
+    "question": "How can I find remote work opportunities?",
+    "expected_route": "VECTOR"
+  },
+  {
+    "id": "V5Q013",
+    "question": "How many entry-level jobs are available?",
+    "expected_route": "SQL"
+  },
+  {
+    "id": "V5Q014",
+    "question": "How many jobs are available at CloudWorks?",
+    "expected_route": "SQL"
+  },
+  {
+    "id": "V5Q015",
+    "question": "What are good strategies for a career pivot?",
+    "expected_route": "VECTOR"
+  }
+]
