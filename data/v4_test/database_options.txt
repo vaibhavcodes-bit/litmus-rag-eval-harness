@@ -1,0 +1,27 @@
+DATABASE TECHNOLOGY GUIDE
+
+SQL Databases
+
+SQL databases store structured data using tables, rows, columns, and relationships.
+
+SQL databases are useful when applications require strong transactional guarantees, structured schemas, complex joins, and consistent relational data.
+
+NoSQL Databases
+
+NoSQL databases are designed for data models that may not fit traditional relational structures.
+
+Document databases can store flexible JSON-like documents. Key-value databases store information using a key and associated value.
+
+NoSQL databases can be useful when applications require flexible schemas, very high write throughput, horizontal scaling, or data models that do not naturally fit relational tables.
+
+SQL vs NoSQL
+
+SQL databases provide structured schemas and strong relational capabilities. NoSQL databases generally provide more flexible data models and can be easier to scale horizontally for certain workloads.
+
+The choice between SQL and NoSQL depends on access patterns, consistency requirements, schema requirements, transaction requirements, scalability requirements, and the application's data model.
+
+Database Selection
+
+An application requiring complex joins, strict transactions, and strongly structured relationships is generally a good candidate for SQL.
+
+An application requiring flexible document structures and horizontal scaling may be a good candidate for a NoSQL document database.
