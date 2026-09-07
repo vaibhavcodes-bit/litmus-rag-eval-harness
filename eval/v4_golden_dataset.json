@@ -1,0 +1,107 @@
+[
+  {
+    "id": "V4Q001",
+    "category": "comparison",
+    "question": "How does remote work differ from on-site work in terms of flexibility and collaboration?",
+    "expected_documents": ["remote_vs_onsite.txt"],
+    "expected_topics": ["remote flexibility", "on-site collaboration"]
+  },
+  {
+    "id": "V4Q002",
+    "category": "comparison",
+    "question": "How are remote employees and on-site employees evaluated differently?",
+    "expected_documents": ["remote_vs_onsite.txt"],
+    "expected_topics": ["remote evaluation", "on-site evaluation"]
+  },
+  {
+    "id": "V4Q003",
+    "category": "multi_part",
+    "question": "What are the benefits of remote work and what are the benefits of on-site work?",
+    "expected_documents": ["remote_vs_onsite.txt"],
+    "expected_topics": ["remote benefits", "on-site benefits"]
+  },
+  {
+    "id": "V4Q004",
+    "category": "multi_part",
+    "question": "What are remote employees expected to do, and what are on-site employees expected to do?",
+    "expected_documents": ["remote_vs_onsite.txt"],
+    "expected_topics": ["remote expectations", "on-site expectations"]
+  },
+  {
+    "id": "V4Q005",
+    "category": "comparison",
+    "question": "Compare remote work and on-site work regarding communication, productivity, and collaboration.",
+    "expected_documents": ["remote_vs_onsite.txt"],
+    "expected_topics": ["remote communication", "independent productivity", "on-site collaboration"]
+  },
+  {
+    "id": "V4Q006",
+    "category": "comparison",
+    "question": "How do technical interviews differ from behavioral interviews, and why might a company use both?",
+    "expected_documents": ["hiring_process.txt"],
+    "expected_topics": ["technical interview", "behavioral interview", "both interview types"]
+  },
+  {
+    "id": "V4Q007",
+    "category": "multi_part",
+    "question": "What does a technical interview assess and what does a behavioral interview assess?",
+    "expected_documents": ["hiring_process.txt"],
+    "expected_topics": ["technical competence", "communication", "teamwork"]
+  },
+  {
+    "id": "V4Q008",
+    "category": "multi_part",
+    "question": "What should a candidate do before discussing implementation details in a system design interview?",
+    "expected_documents": ["hiring_process.txt"],
+    "expected_topics": ["clarify requirements", "constraints", "architecture"]
+  },
+  {
+    "id": "V4Q009",
+    "category": "multi_part",
+    "question": "What should a candidate avoid doing in a system design interview and what should they do instead?",
+    "expected_documents": ["hiring_process.txt"],
+    "expected_topics": ["do not immediately code", "clarify requirements", "outline architecture"]
+  },
+  {
+    "id": "V4Q010",
+    "category": "multi_part",
+    "question": "What should a candidate include in an interview follow-up message and when should it be sent?",
+    "expected_documents": ["hiring_process.txt"],
+    "expected_topics": ["thank interviewer", "specific discussion", "within 24 hours"]
+  },
+  {
+    "id": "V4Q011",
+    "category": "comparison",
+    "question": "How do SQL and NoSQL databases differ in schema flexibility and scalability?",
+    "expected_documents": ["database_options.txt"],
+    "expected_topics": ["structured schema", "flexible data model", "horizontal scaling"]
+  },
+  {
+    "id": "V4Q012",
+    "category": "multi_part",
+    "question": "When is SQL a good choice and when might a NoSQL document database be a better choice?",
+    "expected_documents": ["database_options.txt"],
+    "expected_topics": ["SQL transactions and joins", "NoSQL flexible documents", "horizontal scaling"]
+  },
+  {
+    "id": "V4Q013",
+    "category": "multi_part",
+    "question": "What requirements should be considered when choosing between SQL and NoSQL?",
+    "expected_documents": ["database_options.txt"],
+    "expected_topics": ["access patterns", "consistency", "schema", "transactions", "scalability"]
+  },
+  {
+    "id": "V4Q014",
+    "category": "comparison",
+    "question": "Compare SQL and NoSQL in terms of data structure, transactions, and scaling.",
+    "expected_documents": ["database_options.txt"],
+    "expected_topics": ["structured data", "transactions", "horizontal scaling"]
+  },
+  {
+    "id": "V4Q015",
+    "category": "multi_part",
+    "question": "What are the main characteristics of SQL databases, and what are the main characteristics of NoSQL databases?",
+    "expected_documents": ["database_options.txt"],
+    "expected_topics": ["tables and relationships", "flexible schemas", "document and key-value models"]
+  }
+]

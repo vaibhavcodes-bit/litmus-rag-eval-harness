@@ -1,0 +1,31 @@
+TECHNICAL HIRING PROCESS
+
+Resume Screening
+
+During resume screening, recruiters evaluate whether a candidate's experience, skills, and qualifications match the requirements of the role.
+
+Technical Interview
+
+The technical interview evaluates technical knowledge, problem-solving ability, coding skills, system design knowledge, and the candidate's ability to explain technical decisions.
+
+Behavioral Interview
+
+The behavioral interview evaluates communication, teamwork, leadership, conflict resolution, adaptability, and how the candidate handled situations in previous roles.
+
+Technical vs Behavioral Interviews
+
+Technical interviews focus primarily on technical competence and problem solving. Behavioral interviews focus primarily on interpersonal skills, communication, teamwork, and past behavior.
+
+Companies may use both interview types because technical competence alone does not guarantee that a candidate will communicate effectively or work well with a team.
+
+System Design Interview
+
+A system design interview evaluates a candidate's ability to clarify requirements, identify constraints, estimate scale, design system components, explain trade-offs, and discuss reliability and scalability.
+
+Candidates should not immediately start writing code when given a system design question. They should first clarify requirements and constraints, discuss assumptions, estimate scale when appropriate, and outline the architecture before discussing implementation details.
+
+Interview Follow-Up
+
+Candidates should send a professional follow-up message after an interview. Ideally, the message should be sent within 24 hours.
+
+The follow-up should thank the interviewer, mention something specific discussed during the interview, reinforce interest in the role, and briefly highlight relevant qualifications.
