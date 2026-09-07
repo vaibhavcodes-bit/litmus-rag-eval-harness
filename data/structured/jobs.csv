@@ -1,0 +1,21 @@
+id,title,company,location,remote,experience_level,salary_min,salary_max,employment_type
+1,Backend Engineer,TechNova,Bangalore,1,mid,1200000,1800000,full-time
+2,Senior Backend Engineer,CloudWorks,Bangalore,1,senior,1800000,2800000,full-time
+3,Frontend Engineer,PixelLabs,Delhi,0,mid,1000000,1600000,full-time
+4,Data Analyst,InsightHub,Mumbai,1,entry,700000,1100000,full-time
+5,Machine Learning Engineer,AIForge,Bangalore,1,senior,2000000,3200000,full-time
+6,Product Engineer,BuildStack,Pune,0,mid,1100000,1700000,full-time
+7,DevOps Engineer,CloudWorks,Hyderabad,1,mid,1300000,2000000,full-time
+8,Junior Software Engineer,TechNova,Bangalore,0,entry,600000,900000,full-time
+9,Senior Data Engineer,DataSphere,Remote,1,senior,1900000,3000000,full-time
+10,QA Engineer,QualityFirst,Chennai,0,mid,800000,1300000,full-time
+11,Backend Developer,WebScale,Remote,1,mid,1400000,2100000,full-time
+12,HR Technology Analyst,PeopleTech,Delhi,1,entry,650000,1000000,full-time
+13,AI Product Engineer,AIForge,Remote,1,senior,2200000,3500000,full-time
+14,Software Engineer,CodeCraft,Mumbai,0,mid,1000000,1550000,full-time
+15,Engineering Manager,CloudWorks,Bangalore,1,senior,2800000,4200000,full-time
+16,Mobile Developer,AppWorks,Hyderabad,1,mid,1000000,1700000,full-time
+17,Data Scientist,InsightHub,Bangalore,1,senior,1800000,2900000,full-time
+18,Technical Writer,DocuTech,Remote,1,mid,900000,1400000,full-time
+19,Software Intern,TechNova,Bangalore,0,entry,300000,500000,internship
+20,Security Engineer,SecureNet,Delhi,1,senior,1700000,2700000,full-time
