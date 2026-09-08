@@ -17,3 +17,4 @@ pytest
 openai
 datasets
 ragas
+langchain-community==0.4.1
