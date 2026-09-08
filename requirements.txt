@@ -16,3 +16,4 @@ langgraph
 pytest
 openai
 datasets
+ragas
