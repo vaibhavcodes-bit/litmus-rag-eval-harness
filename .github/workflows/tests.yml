@@ -33,7 +33,7 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
-          python -c "import os; key=os.getenv('GROQ_API_KEY'); print('GROQ_API_KEY configured:', bool(key)); print('GROQ_API_KEY length:', len(key) if key else 0)"
+          python -c "import os; key=os.getenv('GROQ_API_KEY', ''); clean=key.strip(); print('GROQ_API_KEY configured:', bool(key)); print('GROQ_API_KEY length:', len(key)); print('GROQ_API_KEY stripped length:', len(clean)); print('GROQ_API_KEY has surrounding whitespace:', key != clean)"
 
       - name: Build vector store
         run: |
