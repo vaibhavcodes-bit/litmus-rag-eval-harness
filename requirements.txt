@@ -12,5 +12,5 @@ sentence-transformers
 
 groq
 langchain-groq
-
+langgraph
 pytest
