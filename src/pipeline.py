@@ -1,6 +1,7 @@
 from src.retrieval.retriever import retrieve_documents
 from src.retrieval.decomposition import decompose_and_retrieve
 from src.retrieval.router import route_question
+from src.retrieval.grader import corrective_retrieve
 from src.retrieval.sql_source import (
     count_jobs,
     average_salary,
@@ -56,7 +57,7 @@ def _run_sql_source(question: str):
     """
     Run the SQL source for supported structured job questions.
 
-    The SQL source is intentionally explicit in V5 rather than
+    The SQL source is intentionally explicit in V5/V6 rather than
     generating arbitrary SQL from the user's question.
     """
 
@@ -138,6 +139,7 @@ def _run_sql_source(question: str):
                 }
             ],
         }
+
     # ---------------------------------------------------------
     # Average salary queries
     # ---------------------------------------------------------
@@ -176,8 +178,9 @@ def _run_sql_source(question: str):
         }
 
     # ---------------------------------------------------------
-    # Job listing queries
+    # Company job count
     # ---------------------------------------------------------
+
     if "how many" in question_lower and (
         "cloudworks" in question_lower
     ):
@@ -198,8 +201,11 @@ def _run_sql_source(question: str):
                 }
             ],
         }
-    
-    
+
+    # ---------------------------------------------------------
+    # Job listing queries
+    # ---------------------------------------------------------
+
     if (
         "which jobs" in question_lower
         or "what jobs" in question_lower
@@ -229,6 +235,64 @@ def _run_sql_source(question: str):
     raise ValueError(
         "The SQL source does not yet support this question pattern."
     )
+
+
+def _run_vector_v6(question: str, k: int = 4):
+    """
+    Run V6 Corrective RAG on the VECTOR source.
+
+    Retrieval is graded. If no retrieved document is relevant,
+    the query is rewritten and retrieval is retried.
+
+    The corrective retrieval component enforces the maximum
+    retry limit.
+    """
+
+    result = corrective_retrieve(
+        question=question,
+        retrieve_fn=retrieve_documents,
+        k=k,
+        max_retries=2,
+    )
+
+    documents = result["documents"]
+
+    if not documents:
+        return {
+            "answer": "I don't have enough information to answer that.",
+            "sources": [],
+            "route": "VECTOR",
+            "retrieval_attempts": result["retrieval_attempts"],
+            "rewritten_queries": result["rewritten_queries"],
+            "relevant": result["relevant"],
+        }
+
+    context_parts = []
+
+    for document in documents:
+        context_parts.append(
+            document.page_content
+        )
+
+    context = "\n\n".join(context_parts)
+
+    answer = generate_answer(
+        question=question,
+        context=context,
+    )
+
+    sources = _documents_to_sources(
+        documents
+    )
+
+    return {
+        "answer": answer,
+        "sources": sources,
+        "route": "VECTOR",
+        "retrieval_attempts": result["retrieval_attempts"],
+        "rewritten_queries": result["rewritten_queries"],
+        "relevant": result["relevant"],
+    }
 
 
 def answer_question(
@@ -261,24 +325,38 @@ def answer_question(
                 ↓
             LLM
 
-                v5:
+        v5:
             Question
                 ↓
               Router
              /     \\
-         VECTOR    SQL
-           ↓        ↓
+        VECTOR    SQL
+          ↓        ↓
         Chroma   SQLite
              \\    /
               Context
-                 ↓
-                LLM
+                ↓
+               LLM
+
+        v6:
+            Question
+                ↓
+              Router
+             /     \\
+        VECTOR    SQL
+          ↓        ↓
+        Corrective Existing SQL
+        Retrieval   Source
+          ↓          ↓
+          └──── Context ────┘
+                    ↓
+                   LLM
     """
 
     if not question or not question.strip():
         raise ValueError("Question cannot be empty.")
 
-    if mode not in {"v1", "v4", "v5"}:
+    if mode not in {"v1", "v4", "v5", "v6"}:
         raise ValueError(
             "mode must be either 'v1', 'v4', or 'v5'."
         )
@@ -286,6 +364,7 @@ def answer_question(
     # ---------------------------------------------------------
     # V1 — Baseline RAG
     # ---------------------------------------------------------
+
     if mode == "v1":
 
         documents = retrieve_documents(
@@ -325,6 +404,7 @@ def answer_question(
     # ---------------------------------------------------------
     # V4 — Query Decomposition
     # ---------------------------------------------------------
+
     if mode == "v4":
 
         result = decompose_and_retrieve(
@@ -372,6 +452,7 @@ def answer_question(
     # ---------------------------------------------------------
     # V5 — Multi-source Router
     # ---------------------------------------------------------
+
     if mode == "v5":
 
         source = route_question(question)
@@ -379,6 +460,7 @@ def answer_question(
         # -----------------------------------------------------
         # VECTOR source
         # -----------------------------------------------------
+
         if source == "VECTOR":
 
             documents = retrieve_documents(
@@ -420,6 +502,7 @@ def answer_question(
         # -----------------------------------------------------
         # SQL source
         # -----------------------------------------------------
+
         if source == "SQL":
 
             result = _run_sql_source(question)
@@ -443,6 +526,61 @@ def answer_question(
                 "answer": answer,
                 "sources": sources,
                 "route": "SQL",
+            }
+
+        raise ValueError(
+            f"Unsupported route returned by router: {source}"
+        )
+
+    # ---------------------------------------------------------
+    # V6 — Corrective RAG
+    # ---------------------------------------------------------
+
+    if mode == "v6":
+
+        source = route_question(question)
+
+        # -----------------------------------------------------
+        # VECTOR source
+        # -----------------------------------------------------
+
+        if source == "VECTOR":
+
+            return _run_vector_v6(
+                question=question,
+                k=k,
+            )
+
+        # -----------------------------------------------------
+        # SQL source
+        # -----------------------------------------------------
+
+        if source == "SQL":
+
+            result = _run_sql_source(question)
+
+            context = result["context"]
+            sources = result["sources"]
+
+            if not context:
+                return {
+                    "answer": "I don't have enough information to answer that.",
+                    "sources": sources,
+                    "route": "SQL",
+                }
+
+            answer = generate_answer(
+                question=question,
+                context=context,
+            )
+
+            return {
+                "answer": answer,
+                "sources": sources,
+                "route": "SQL",
+                "retrieval_attempts": 1,
+                "rewritten_queries": [],
+                "relevant": True,
             }
 
         raise ValueError(
