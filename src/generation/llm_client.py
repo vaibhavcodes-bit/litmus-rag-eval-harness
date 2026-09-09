@@ -13,9 +13,10 @@ def get_llm():
 
     Required environment variable:
     GROQ_API_KEY (format: gsk_xxxxx...)
-    
+
     Raises:
         ValueError: If GROQ_API_KEY is not set or has invalid format
+        RuntimeError: If the Groq client cannot be initialized
     """
 
     api_key = os.getenv("GROQ_API_KEY", "").strip()
@@ -25,17 +26,18 @@ def get_llm():
             "GROQ_API_KEY is not set. "
             "Please add it to the .env file or set it as an environment variable."
         )
-    
+
     # Validate API key format
-    if not api_key.startswith('gsk_'):
+    if not api_key.startswith("gsk_"):
         raise ValueError(
-            f"Invalid GROQ_API_KEY format. Expected key to start with 'gsk_', "
-            f"got: {api_key[:10]}..."
+            "Invalid GROQ_API_KEY format. Expected key to start with "
+            "'gsk_', got: "
+            f"{api_key[:10]}..."
         )
 
     try:
         llm = ChatGroq(
-            model="mixtral-8x7b-32768",
+            model="openai/gpt-oss-20b",
             temperature=0,
             api_key=api_key,
         )
@@ -79,14 +81,14 @@ Answer:
 def generate_answer(question: str, context: str):
     """
     Generate an answer using the Groq LLM.
-    
+
     Args:
         question: The user's question
         context: The context to base the answer on
-        
+
     Returns:
         str: The LLM's response
-        
+
     Raises:
         ValueError: If question or context is empty
     """
