@@ -48,7 +48,6 @@ jobs:
               sys.exit(1)
 
           print('GROQ_API_KEY is properly configured')
-          print(f'API Key length: {len(key)} characters')
           "
 
       - name: Test direct Groq API connection
