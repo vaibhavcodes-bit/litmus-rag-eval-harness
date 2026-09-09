@@ -14,3 +14,5 @@ groq
 langchain-groq
 langgraph
 pytest
+pytest-mock
+pytest-cov
