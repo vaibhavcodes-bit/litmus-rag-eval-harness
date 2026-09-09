@@ -325,7 +325,7 @@ def multi_query_retrieve(
             )
         )
 
-    ranked_documents = weighted_rank_documents(
+        ranked_documents = weighted_rank_documents(
         original_documents=original_documents,
         documents_by_query=generated_documents_by_query,
         original_question=question,
@@ -335,7 +335,8 @@ def multi_query_retrieve(
         rrf_k=60,
     )
 
-    return deduplicate_documents(ranked_documents)
+    return deduplicate_documents(ranked_documents)[: query_count * k]
+
 def rerank_by_original_question(
     documents: list[Document],
     question: str,
