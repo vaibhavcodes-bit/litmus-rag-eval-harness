@@ -299,15 +299,12 @@ def rank_documents(
 
 def multi_query_retrieve(
     question: str,
-    query_count: int = DEFAULT_QUERY_COUNT,
-    k: int = DEFAULT_RETRIEVAL_K,
-) -> List[Document]:
-    if not question or not question.strip():
-        raise ValueError("question must not be empty")
-
+    query_count: int = 4,
+    k: int = 4,
+):
     original_documents = retrieve_documents(
         question=question,
-        k=k,
+        k=max(k * 2, 8),
     )
 
     generated_queries = generate_queries(
@@ -324,11 +321,11 @@ def multi_query_retrieve(
         generated_documents_by_query.append(
             retrieve_documents(
                 query,
-                k,
+                max(k * 2, 8),
             )
         )
 
-    ranked_documents = weighted_rank_documents(
+        ranked_documents = weighted_rank_documents(
         original_documents=original_documents,
         documents_by_query=generated_documents_by_query,
         original_question=question,
@@ -338,7 +335,7 @@ def multi_query_retrieve(
         rrf_k=60,
     )
 
-    return deduplicate_documents(ranked_documents)
+    return deduplicate_documents(ranked_documents)[: query_count * k]
 
 def rerank_by_original_question(
     documents: list[Document],

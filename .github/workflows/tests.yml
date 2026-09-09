@@ -1,0 +1,81 @@
+name: Litmus Tests
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+    branches:
+      - "**"
+
+jobs:
+  test:
+    name: Run Backend Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest pytest-mock
+
+      - name: Verify Groq configuration
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          python -c "
+          import os
+          import sys
+
+          key = os.getenv('GROQ_API_KEY', '').strip()
+
+          if not key:
+              print('ERROR: GROQ_API_KEY is not set')
+              sys.exit(1)
+
+          if not key.startswith('gsk_'):
+              print('ERROR: GROQ_API_KEY has invalid format')
+              sys.exit(1)
+
+          print('GROQ_API_KEY is properly configured')
+          "
+
+      - name: Test direct Groq API connection
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          python -c "
+          import os
+          from groq import Groq
+
+          key = os.getenv('GROQ_API_KEY', '').strip()
+
+          print('Creating Groq client...')
+          client = Groq(api_key=key)
+
+          print('Calling Groq models endpoint...')
+          models = client.models.list()
+
+          print('Groq API connection successful')
+          print(f'Models returned: {len(models.data)}')
+          "
+
+      - name: Build vector store
+        run: |
+          python -m src.ingest.ingest_all
+
+      - name: Run test suite
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          pytest -v --tb=short

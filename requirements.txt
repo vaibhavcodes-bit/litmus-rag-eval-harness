@@ -1,7 +1,7 @@
 python-dotenv
 
 langchain
-langchain-community
+langchain-community==0.4.1
 langchain-text-splitters
 langchain-chroma
 
@@ -16,3 +16,6 @@ langgraph
 pytest
 pytest-mock
 pytest-cov
+openai
+datasets
+ragas
