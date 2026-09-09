@@ -36,15 +36,39 @@ jobs:
           python -c "
           import os
           import sys
+
           key = os.getenv('GROQ_API_KEY', '').strip()
+
           if not key:
-            print('ERROR: GROQ_API_KEY is not set')
-            sys.exit(1)
+              print('ERROR: GROQ_API_KEY is not set')
+              sys.exit(1)
+
           if not key.startswith('gsk_'):
-            print('ERROR: GROQ_API_KEY has invalid format')
-            sys.exit(1)
-          print('✓ GROQ_API_KEY is properly configured')
-          print(f'✓ API Key length: {len(key)} characters')
+              print('ERROR: GROQ_API_KEY has invalid format')
+              sys.exit(1)
+
+          print('GROQ_API_KEY is properly configured')
+          print(f'API Key length: {len(key)} characters')
+          "
+
+      - name: Test direct Groq API connection
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          python -c "
+          import os
+          from groq import Groq
+
+          key = os.getenv('GROQ_API_KEY', '').strip()
+
+          print('Creating Groq client...')
+          client = Groq(api_key=key)
+
+          print('Calling Groq models endpoint...')
+          models = client.models.list()
+
+          print('Groq API connection successful')
+          print(f'Models returned: {len(models.data)}')
           "
 
       - name: Build vector store
