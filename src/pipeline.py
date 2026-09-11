@@ -1,3 +1,4 @@
+from src.retrieval.multi_query import multi_query_retrieve
 from src.retrieval.retriever import retrieve_documents
 from src.retrieval.decomposition import decompose_and_retrieve
 from src.retrieval.router import route_question
@@ -314,6 +315,19 @@ def answer_question(
                 ↓
             LLM
 
+        v3:
+            Question
+                ↓
+            Generate Multiple Queries
+                ↓
+            Multi-Query Retrieval
+                ↓
+            Merge + Rank + Deduplicate
+                ↓
+            Context
+                ↓
+            LLM
+
         v4:
             Question
                 ↓
@@ -328,37 +342,37 @@ def answer_question(
         v5:
             Question
                 ↓
-              Router
-             /     \\
-        VECTOR    SQL
-          ↓        ↓
-        Chroma   SQLite
-             \\    /
-              Context
-                ↓
-               LLM
+                 Router
+                /     \
+           VECTOR    SQL
+             ↓        ↓
+           Chroma   SQLite
+                \    /
+                 Context
+                    ↓
+                   LLM
 
         v6:
             Question
                 ↓
-              Router
-             /     \\
-        VECTOR    SQL
-          ↓        ↓
-        Corrective Existing SQL
-        Retrieval   Source
-          ↓          ↓
-          └──── Context ────┘
-                    ↓
-                   LLM
+                 Router
+                /     \
+           VECTOR    SQL
+             ↓        ↓
+          Corrective Existing SQL
+          Retrieval   Source
+             ↓          ↓
+             └──── Context ────┘
+                       ↓
+                      LLM
     """
 
     if not question or not question.strip():
         raise ValueError("Question cannot be empty.")
 
-    if mode not in {"v1", "v4", "v5", "v6"}:
+    if mode not in {"v1", "v3", "v4", "v5", "v6"}:
         raise ValueError(
-            "mode must be either 'v1', 'v4', or 'v5'."
+            "mode must be one of 'v1', 'v3', 'v4', 'v5', or 'v6'."
         )
 
     # ---------------------------------------------------------
@@ -369,6 +383,47 @@ def answer_question(
 
         documents = retrieve_documents(
             question=question,
+            k=k,
+        )
+
+        if not documents:
+            return {
+                "answer": "I don't have enough information to answer that.",
+                "sources": [],
+            }
+
+        context_parts = []
+
+        for document in documents:
+            context_parts.append(
+                document.page_content
+            )
+
+        context = "\n\n".join(context_parts)
+
+        answer = generate_answer(
+            question=question,
+            context=context,
+        )
+
+        sources = _documents_to_sources(
+            documents
+        )
+
+        return {
+            "answer": answer,
+            "sources": sources,
+        }
+
+    # ---------------------------------------------------------
+    # V3 — Multi-Query Retrieval
+    # ---------------------------------------------------------
+
+    if mode == "v3":
+
+        documents = multi_query_retrieve(
+            question=question,
+            query_count=4,
             k=k,
         )
 
