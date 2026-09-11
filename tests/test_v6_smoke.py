@@ -221,5 +221,5 @@ def test_v6_invalid_mode():
     except ValueError as error:
         assert (
             str(error)
-            == "mode must be either 'v1', 'v4', or 'v5'."
+            == "mode must be one of 'v1', 'v3', 'v4', 'v5', or 'v6'."
         )
