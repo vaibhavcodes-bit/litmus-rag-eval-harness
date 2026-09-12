@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.git/
+.github/
+.env
+
+data/processed/chroma/
+eval/results/
+
+*.pyc
+*.pyo
+
+.vscode/
+.idea/
