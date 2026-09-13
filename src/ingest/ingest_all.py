@@ -2,7 +2,7 @@ from pathlib import Path
 
 from src.ingest.loader import load_pdf
 from src.ingest.chunker import chunk_documents
-from src.retrieval.vector_store import add_documents
+from src.retrieval.vector_store import add_documents, reset_vector_store
 
 
 RAW_DATA_DIR = Path("data/raw")
@@ -11,7 +11,7 @@ RAW_DATA_DIR = Path("data/raw")
 def ingest_all_pdfs():
     """
     Load every PDF from data/raw, split it into chunks,
-    and add the chunks to the persistent Chroma vector store.
+    and add the chunks to a clean Chroma vector store.
     """
 
     pdf_files = sorted(RAW_DATA_DIR.glob("*.pdf"))
@@ -23,6 +23,10 @@ def ingest_all_pdfs():
 
     total_documents = 0
     total_chunks = 0
+
+    print("\nResetting Chroma vector store...")
+    reset_vector_store()
+    print("Chroma vector store reset successfully.")
 
     for pdf_file in pdf_files:
         print(f"\nProcessing: {pdf_file.name}")

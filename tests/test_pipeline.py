@@ -3,7 +3,7 @@ from src.pipeline import answer_question
 
 def test_answer_question():
     result = answer_question(
-        "What are the company working hours?"
+        "What does the STAR method stand for in interview answers?"
     )
 
     assert isinstance(result, dict)

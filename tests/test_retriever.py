@@ -2,7 +2,7 @@ from src.retrieval.retriever import retrieve_documents
 
 
 def test_retrieve_documents():
-    question = "What are the company working hours?"
+    question = "What does the STAR method stand for in interview answers?"
 
     documents = retrieve_documents(question, k=2)
 

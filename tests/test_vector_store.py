@@ -2,14 +2,11 @@ from pathlib import Path
 
 from langchain_core.documents import Document
 
-from src.retrieval.vector_store import (
-    get_vector_store,
-    add_documents,
-)
+from src.retrieval.vector_store import add_documents
 
 
-def test_vector_store():
-    test_directory = Path("data/processed/chroma")
+def test_vector_store(tmp_path):
+    test_directory = tmp_path / "chroma"
 
     documents = [
         Document(
@@ -28,7 +25,10 @@ def test_vector_store():
         ),
     ]
 
-    vector_store = add_documents(documents)
+    vector_store = add_documents(
+        documents,
+        persist_directory=test_directory,
+    )
 
     assert vector_store is not None
 
@@ -44,4 +44,26 @@ def test_vector_store():
     assert "working hours" in result.page_content.lower()
     assert result.metadata["source"] == "test_policy.pdf"
 
+    assert test_directory.exists()
+
+
+def test_vector_store_does_not_require_production_database(tmp_path):
+    test_directory = tmp_path / "chroma"
+
+    documents = [
+        Document(
+            page_content="Temporary test document.",
+            metadata={
+                "source": "temporary_test.pdf",
+                "page": 0,
+            },
+        )
+    ]
+
+    vector_store = add_documents(
+        documents,
+        persist_directory=test_directory,
+    )
+
+    assert vector_store is not None
     assert test_directory.exists()
