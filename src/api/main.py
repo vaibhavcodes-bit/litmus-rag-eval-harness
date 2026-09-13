@@ -48,6 +48,27 @@ def debug_post():
     }
 
 
+@app.post("/debug/body")
+def debug_body(payload: dict):
+    """
+    Test JSON request-body parsing without touching
+    AskRequest validation or the RAG pipeline.
+    """
+
+    print("DEBUG: /debug/body received", flush=True)
+
+    print(
+        f"DEBUG: payload={payload!r}",
+        flush=True,
+    )
+
+    return {
+        "status": "ok",
+        "message": "JSON body reached FastAPI",
+        "payload": payload,
+    }
+
+
 @app.post("/ask", response_model=AskResponse)
 def ask_question(request: AskRequest):
     """
@@ -135,3 +156,26 @@ def get_latest_evaluation():
     print("DEBUG: /eval/latest completed", flush=True)
 
     return result
+@app.post("/debug/ask-entry")
+def debug_ask_entry(request: AskRequest):
+    """
+    Test AskRequest validation and FastAPI request handling
+    without calling the RAG pipeline.
+    """
+
+    print("DEBUG: /debug/ask-entry received", flush=True)
+
+    print(
+        f"DEBUG: question={request.question!r}, "
+        f"k={request.k}, "
+        f"mode={request.mode!r}",
+        flush=True,
+    )
+
+    return {
+        "status": "ok",
+        "message": "AskRequest reached FastAPI",
+        "question": request.question,
+        "k": request.k,
+        "mode": request.mode,
+    }
