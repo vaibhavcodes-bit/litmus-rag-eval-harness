@@ -14,6 +14,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY src ./src
 COPY data/raw ./data/raw
 
-EXPOSE 8000
+COPY start.sh ./start.sh
 
-CMD ["uvicorn", "src.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+RUN chmod +x ./start.sh
+
+EXPOSE 10000
+
+CMD ["./start.sh"]
