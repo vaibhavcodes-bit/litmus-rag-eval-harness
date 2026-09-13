@@ -5,7 +5,6 @@ __pycache__/
 .github/
 .env
 
-data/processed/chroma/
 eval/results/
 
 *.pyc

@@ -13,7 +13,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY src ./src
 COPY data/raw ./data/raw
-
+COPY data/processed/chroma ./data/processed/chroma
 COPY start.sh ./start.sh
 
 RUN chmod +x ./start.sh

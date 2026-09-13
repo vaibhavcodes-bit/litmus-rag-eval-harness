@@ -4,7 +4,9 @@ __pycache__/
 .pytest_cache/
 
 # Generated files
-data/processed/
+data/processed/*
+!data/processed/chroma/
+!data/processed/chroma/**
 eval/results/
 
 # Temporary / backup files
