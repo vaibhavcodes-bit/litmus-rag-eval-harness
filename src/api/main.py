@@ -179,3 +179,31 @@ def debug_ask_entry(request: AskRequest):
         "k": request.k,
         "mode": request.mode,
     }
+@app.post("/debug/embedding")
+def debug_embedding():
+    """
+    Test HuggingFace embedding model initialization and inference
+    without using Chroma or the LLM.
+    """
+
+    print("DEBUG: /debug/embedding received", flush=True)
+
+    from src.retrieval.embedder import get_embeddings
+
+    print("DEBUG: loading embeddings", flush=True)
+
+    embeddings = get_embeddings()
+
+    print("DEBUG: embeddings loaded", flush=True)
+
+    vector = embeddings.embed_query("test")
+
+    print(
+        f"DEBUG: embedding generated, dimensions={len(vector)}",
+        flush=True,
+    )
+
+    return {
+        "status": "ok",
+        "dimensions": len(vector),
+    }
