@@ -16,6 +16,7 @@ RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTr
 COPY src ./src
 COPY data/raw ./data/raw
 COPY data/processed/chroma ./data/processed/chroma
+COPY eval ./eval
 COPY start.sh ./start.sh
 
 RUN chmod +x ./start.sh
