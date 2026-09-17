@@ -1,3 +1,4 @@
+from src.graph.adaptive_rag_graph import build_graph
 from src.retrieval.multi_query import multi_query_retrieve
 from src.retrieval.retriever import retrieve_documents
 from src.retrieval.decomposition import decompose_and_retrieve
@@ -370,9 +371,9 @@ def answer_question(
     if not question or not question.strip():
         raise ValueError("Question cannot be empty.")
 
-    if mode not in {"v1", "v3", "v4", "v5", "v6"}:
+    if mode not in {"v1", "v3", "v4", "v5", "v6", "v7"}:
         raise ValueError(
-            "mode must be one of 'v1', 'v3', 'v4', 'v5', or 'v6'."
+            "mode must be one of 'v1', 'v3', 'v4', 'v5', 'v6', or 'v7'."
         )
 
     # ---------------------------------------------------------
@@ -641,3 +642,28 @@ def answer_question(
         raise ValueError(
             f"Unsupported route returned by router: {source}"
         )
+
+
+    # ---------------------------------------------------------
+    # V7 - Adaptive RAG with LangGraph
+    # ---------------------------------------------------------
+
+    if mode == "v7":
+
+        graph = build_graph()
+
+        final_state = graph.invoke(
+            {
+                "question": question,
+            }
+        )
+
+        return {
+            "answer": final_state.get("answer", ""),
+            "sources": final_state.get("sources", []),
+            "route": final_state.get("route"),
+            "retrieval_attempts": final_state.get("retrieval_attempts", 0),
+            "answer_attempts": final_state.get("answer_attempts", 0),
+            "rewritten_queries": final_state.get("rewritten_queries", []),
+            "relevant": final_state.get("relevant", False),
+        }
