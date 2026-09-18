@@ -2,6 +2,7 @@
 import json
 
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 
 from src.api.schemas import (
     AskRequest,
@@ -15,6 +16,21 @@ app = FastAPI(
     title="Litmus RAG API",
     description="FastAPI backend for the Litmus RAG evaluation system.",
     version="1.0.0",
+)
+
+
+# Allow the local Next.js frontend to call the backend.
+#
+# Local frontend:
+# http://localhost:3000
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 

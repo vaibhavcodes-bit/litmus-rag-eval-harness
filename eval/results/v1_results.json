@@ -5,7 +5,7 @@
     "total_questions": 50,
     "hit_rate_at_k": 0.98,
     "mrr": 0.95,
-    "context_precision": 0.56
+    "context_precision": 0.565
   },
   "questions": [
     {
@@ -527,9 +527,9 @@
           "content": "Resume Writing\nLitmus V2 career/resume RAG knowledge-base document.\nResume length\nCandidates with fewer than 10 years of experience should generally keep their resume to one page.\nSenior professionals may use no more than two pages.\nResume photos\nFor the US, UK, Canada, and Australia, including a photo on a resume is discouraged because it can\ntrigger unconscious bias and is not standard practice.\nQuantified achievements"
         },
         {
-          "source": "test_leave_policy.pdf",
+          "source": "salary_negotiation.pdf",
           "page": 0,
-          "content": "Employees receive 20 annual leave days."
+          "content": "Salary Negotiation\nLitmus V2 career/resume RAG knowledge-base document.\nTiming\nThe best time to negotiate salary is after receiving a formal offer and before accepting it, when the\ncandidate generally has the most leverage.\nEmployer-first anchoring\nLetting the employer state a figure first can avoid anchoring too low; naming a number first risks anchoring\nbelow the employer’s budget.\nOther negotiable elements"
         }
       ],
       "hit_rate_at_k": 1.0,
@@ -913,11 +913,6 @@
           "content": "steps taken to improve it.\nQuestions for interviewer\nCandidates should prepare thoughtful questions. Having none can signal disengagement; questions about\nthe team, role, or company are appropriate.\nSystem design\nJumping straight to code skips requirements, scale, constraints, goals, and trade-offs. Clarify requirements\nfirst, then discuss high-level architecture and trade-offs before implementation details.\nTechnical screening"
         },
         {
-          "source": "test_policy.pdf",
-          "page": 0,
-          "content": "Company working hours are from 9 AM to 6 PM."
-        },
-        {
           "source": "interview_prep.pdf",
           "page": 0,
           "content": "Technical screening\nA technical screening verifies baseline technical competency early, often through a short coding or\nknowledge-based call, before longer onsite or panel interviews.\nSalary timing\nSalary negotiation is generally reserved for after a formal offer rather than early interview rounds.\nAfter interview\nWithin 24 hours, send a personalized thank-you email, reiterate interest, and reference something specific\ndiscussed.\nBehavioral vs technical"
@@ -926,11 +921,16 @@
           "source": "salary_negotiation.pdf",
           "page": 0,
           "content": "Salary Negotiation\nLitmus V2 career/resume RAG knowledge-base document.\nTiming\nThe best time to negotiate salary is after receiving a formal offer and before accepting it, when the\ncandidate generally has the most leverage.\nEmployer-first anchoring\nLetting the employer state a figure first can avoid anchoring too low; naming a number first risks anchoring\nbelow the employer’s budget.\nOther negotiable elements"
+        },
+        {
+          "source": "interview_prep.pdf",
+          "page": 0,
+          "content": "Interview Prep\nLitmus V2 career/resume RAG knowledge-base document.\nSTAR\nSTAR stands for Situation, Task, Action, and Result, a common framework for behavioral interview\nanswers.\nWhy STAR works\nSTAR provides context, clarifies the candidate’s specific role and actions, and highlights outcomes,\npreventing vague or rambling responses.\nGreatest weakness\nAvoid disguised strengths such as “I work too hard.” Give a genuine, self-aware weakness and concrete\nsteps taken to improve it."
         }
       ],
       "hit_rate_at_k": 1.0,
       "mrr": 1.0,
-      "context_precision": 0.5
+      "context_precision": 0.75
     },
     {
       "id": "Q029",
@@ -1385,9 +1385,9 @@
           "content": "Other negotiable elements\nNegotiable elements can include signing bonus, equity or stock options, remote/flexible work, vacation\ndays, start date, professional development budget, and other benefits.\nMarket research\nResearch comparable market and industry salary data before negotiating to provide a factual,\ndata-backed basis for a counteroffer."
         },
         {
-          "source": "test_policy.pdf",
+          "source": "interview_prep.pdf",
           "page": 0,
-          "content": "Company working hours are from 9 AM to 6 PM."
+          "content": "steps taken to improve it.\nQuestions for interviewer\nCandidates should prepare thoughtful questions. Having none can signal disengagement; questions about\nthe team, role, or company are appropriate.\nSystem design\nJumping straight to code skips requirements, scale, constraints, goals, and trade-offs. Clarify requirements\nfirst, then discuss high-level architecture and trade-offs before implementation details.\nTechnical screening"
         }
       ],
       "hit_rate_at_k": 1.0,
@@ -1418,9 +1418,9 @@
           "content": "Technical screening\nA technical screening verifies baseline technical competency early, often through a short coding or\nknowledge-based call, before longer onsite or panel interviews.\nSalary timing\nSalary negotiation is generally reserved for after a formal offer rather than early interview rounds.\nAfter interview\nWithin 24 hours, send a personalized thank-you email, reiterate interest, and reference something specific\ndiscussed.\nBehavioral vs technical"
         },
         {
-          "source": "test_leave_policy.pdf",
+          "source": "job_search_strategy.pdf",
           "page": 0,
-          "content": "Employees receive 20 annual leave days."
+          "content": "Job Search Strategy\nLitmus V2 career/resume RAG knowledge-base document.\nHidden job market\nThe hidden job market refers to openings filled through networking, referrals, or internal promotion rather\nthan public advertising.\nNetworking\nNetworking can surface hidden opportunities and provide internal referrals. Referrals frequently receive\npriority screening compared with general careers-page applications.\nInformational interview"
         }
       ],
       "hit_rate_at_k": 1.0,
@@ -1644,14 +1644,14 @@
           "content": "Technical screening\nA technical screening verifies baseline technical competency early, often through a short coding or\nknowledge-based call, before longer onsite or panel interviews.\nSalary timing\nSalary negotiation is generally reserved for after a formal offer rather than early interview rounds.\nAfter interview\nWithin 24 hours, send a personalized thank-you email, reiterate interest, and reference something specific\ndiscussed.\nBehavioral vs technical"
         },
         {
-          "source": "test_policy.pdf",
-          "page": 0,
-          "content": "Company working hours are from 9 AM to 6 PM."
-        },
-        {
           "source": "job_search_strategy.pdf",
           "page": 0,
           "content": "ATS matching and application quality. Generic mass applications often have lower response rates per\napplication.\nCareer changers\nCareer changers should emphasize transferable skills, relevant projects or certifications, and a clear\nnarrative connecting previous experience to the new field.\nFirst step\nBegin with self-assessment: clarify career goals, target roles, target industries, and non-negotiables before\napplying."
+        },
+        {
+          "source": "salary_negotiation.pdf",
+          "page": 0,
+          "content": "Salary Negotiation\nLitmus V2 career/resume RAG knowledge-base document.\nTiming\nThe best time to negotiate salary is after receiving a formal offer and before accepting it, when the\ncandidate generally has the most leverage.\nEmployer-first anchoring\nLetting the employer state a figure first can avoid anchoring too low; naming a number first risks anchoring\nbelow the employer’s budget.\nOther negotiable elements"
         }
       ],
       "hit_rate_at_k": 0.0,
