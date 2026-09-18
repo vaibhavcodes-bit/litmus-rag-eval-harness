@@ -335,7 +335,7 @@ def multi_query_retrieve(
         rrf_k=60,
     )
 
-    return deduplicate_documents(ranked_documents)[: query_count * k]
+    return deduplicate_documents(ranked_documents)[:k]
 
 def rerank_by_original_question(
     documents: list[Document],
