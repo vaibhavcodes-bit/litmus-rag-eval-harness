@@ -25,9 +25,10 @@ app = FastAPI(
 # http://localhost:3000
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-    ],
+   allow_origins=[
+    "http://localhost:3000",
+    "https://litmus-frontend-alpha.vercel.app",
+],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
