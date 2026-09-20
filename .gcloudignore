@@ -1,0 +1,15 @@
+﻿.venv/
+__pycache__/
+.pytest_cache/
+.git/
+.github/
+.env
+
+*.pyc
+*.pyo
+
+.vscode/
+.idea/
+
+# Keep evaluation results in the Cloud Run build context.
+# Do not add eval/results/ here.
