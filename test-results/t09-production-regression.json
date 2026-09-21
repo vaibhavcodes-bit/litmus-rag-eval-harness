@@ -1,0 +1,663 @@
+{
+  "test": "T09",
+  "name": "Production Golden Regression",
+  "api_url": "https://litmus-rag-api-516781219845.asia-south1.run.app/ask",
+  "mode": "v1",
+  "k": 4,
+  "total_questions": 50,
+  "passed": 50,
+  "failed": 0,
+  "pass_rate": 1.0,
+  "results": [
+    {
+      "id": "Q001",
+      "question": "What is the ideal length for a resume with under 10 years of experience?",
+      "expected_source": "resume_writing.pdf",
+      "retrieved_sources": [
+        "resume_writing.pdf",
+        "cover_letters.pdf",
+        "resume_writing.pdf",
+        "resume_writing.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 935.8
+    },
+    {
+      "id": "Q002",
+      "question": "Should a resume include a photo?",
+      "expected_source": "resume_writing.pdf",
+      "retrieved_sources": [
+        "resume_writing.pdf",
+        "resume_writing.pdf",
+        "cover_letters.pdf",
+        "resume_writing.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 1010.54
+    },
+    {
+      "id": "Q003",
+      "question": "Why are quantified achievements preferred over generic duty statements on a resume?",
+      "expected_source": "resume_writing.pdf",
+      "retrieved_sources": [
+        "resume_writing.pdf",
+        "resume_writing.pdf",
+        "resume_writing.pdf",
+        "resume_writing.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 1106.18
+    },
+    {
+      "id": "Q004",
+      "question": "What resume format is best for someone with employment gaps?",
+      "expected_source": "resume_writing.pdf",
+      "retrieved_sources": [
+        "resume_writing.pdf",
+        "cover_letters.pdf",
+        "resume_writing.pdf",
+        "resume_writing.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 930.7
+    },
+    {
+      "id": "Q005",
+      "question": "What is the recommended action verb tense for past roles versus a current role on a resume?",
+      "expected_source": "resume_writing.pdf",
+      "retrieved_sources": [
+        "resume_writing.pdf",
+        "remote_work_and_career_pivot.pdf",
+        "resume_writing.pdf",
+        "resume_writing.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 1023.44
+    },
+    {
+      "id": "Q006",
+      "question": "A candidate has three internships but no full-time job. How should they structure their resume to appear competitive for an entry-level role?",
+      "expected_source": "resume_writing.pdf",
+      "retrieved_sources": [
+        "resume_writing.pdf",
+        "resume_writing.pdf",
+        "job_search_strategy.pdf",
+        "resume_writing.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 1611.64
+    },
+    {
+      "id": "Q007",
+      "question": "Is it necessary to include references on a resume?",
+      "expected_source": "resume_writing.pdf",
+      "retrieved_sources": [
+        "resume_writing.pdf",
+        "resume_writing.pdf",
+        "cover_letters.pdf",
+        "ats_optimization.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 2290.94
+    },
+    {
+      "id": "Q008",
+      "question": "What is the difference between a resume summary and a resume objective?",
+      "expected_source": "resume_writing.pdf",
+      "retrieved_sources": [
+        "resume_writing.pdf",
+        "resume_writing.pdf",
+        "resume_writing.pdf",
+        "ats_optimization.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 1288.82
+    },
+    {
+      "id": "Q009",
+      "question": "What does ATS stand for in the context of job applications?",
+      "expected_source": "ats_optimization.pdf",
+      "retrieved_sources": [
+        "ats_optimization.pdf",
+        "ats_optimization.pdf",
+        "ats_optimization.pdf",
+        "job_search_strategy.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 1347.9
+    },
+    {
+      "id": "Q010",
+      "question": "Why should complex tables and graphics be avoided in a resume intended for ATS scanning?",
+      "expected_source": "ats_optimization.pdf",
+      "retrieved_sources": [
+        "ats_optimization.pdf",
+        "ats_optimization.pdf",
+        "ats_optimization.pdf",
+        "resume_writing.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 1303.8
+    },
+    {
+      "id": "Q011",
+      "question": "If a job description repeatedly uses the term 'cross-functional collaboration,' what should a candidate do on their resume?",
+      "expected_source": "ats_optimization.pdf",
+      "retrieved_sources": [
+        "ats_optimization.pdf",
+        "remote_work_and_career_pivot.pdf",
+        "resume_writing.pdf",
+        "linkedin_branding.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 1345.91
+    },
+    {
+      "id": "Q012",
+      "question": "What file format is generally safest for submitting a resume through an online application portal?",
+      "expected_source": "ats_optimization.pdf",
+      "retrieved_sources": [
+        "ats_optimization.pdf",
+        "resume_writing.pdf",
+        "resume_writing.pdf",
+        "resume_writing.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 1618.54
+    },
+    {
+      "id": "Q013",
+      "question": "Should a candidate use standard section headings like 'Experience' and 'Education' on an ATS-optimized resume?",
+      "expected_source": "ats_optimization.pdf",
+      "retrieved_sources": [
+        "ats_optimization.pdf",
+        "resume_writing.pdf",
+        "ats_optimization.pdf",
+        "ats_optimization.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 2080.19
+    },
+    {
+      "id": "Q014",
+      "question": "How does keyword stuffing differ from legitimate ATS optimization, and why can stuffing backfire?",
+      "expected_source": "ats_optimization.pdf",
+      "retrieved_sources": [
+        "ats_optimization.pdf",
+        "ats_optimization.pdf",
+        "ats_optimization.pdf",
+        "ats_optimization.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 1230.68
+    },
+    {
+      "id": "Q015",
+      "question": "Can an ATS reject a resume before a human ever sees it?",
+      "expected_source": "ats_optimization.pdf",
+      "retrieved_sources": [
+        "ats_optimization.pdf",
+        "ats_optimization.pdf",
+        "resume_writing.pdf",
+        "job_search_strategy.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 1033.72
+    },
+    {
+      "id": "Q016",
+      "question": "How long should a cover letter typically be?",
+      "expected_source": "cover_letters.pdf",
+      "retrieved_sources": [
+        "cover_letters.pdf",
+        "cover_letters.pdf",
+        "resume_writing.pdf",
+        "salary_negotiation.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 988.05
+    },
+    {
+      "id": "Q017",
+      "question": "Why is it considered a mistake to restate the entire resume in a cover letter?",
+      "expected_source": "cover_letters.pdf",
+      "retrieved_sources": [
+        "cover_letters.pdf",
+        "cover_letters.pdf",
+        "resume_writing.pdf",
+        "resume_writing.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 5157.44
+    },
+    {
+      "id": "Q018",
+      "question": "What should the opening paragraph of a strong cover letter accomplish?",
+      "expected_source": "cover_letters.pdf",
+      "retrieved_sources": [
+        "cover_letters.pdf",
+        "cover_letters.pdf",
+        "ats_optimization.pdf",
+        "linkedin_branding.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 1055.53
+    },
+    {
+      "id": "Q019",
+      "question": "Is it acceptable to use a generic, unaddressed cover letter for every job application?",
+      "expected_source": "cover_letters.pdf",
+      "retrieved_sources": [
+        "cover_letters.pdf",
+        "cover_letters.pdf",
+        "ats_optimization.pdf",
+        "resume_writing.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 4237.97
+    },
+    {
+      "id": "Q020",
+      "question": "What tone is generally recommended for a cover letter?",
+      "expected_source": "cover_letters.pdf",
+      "retrieved_sources": [
+        "cover_letters.pdf",
+        "cover_letters.pdf",
+        "resume_writing.pdf",
+        "ats_optimization.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 8965.09
+    },
+    {
+      "id": "Q021",
+      "question": "What does the STAR method stand for in interview answers?",
+      "expected_source": "interview_prep.pdf",
+      "retrieved_sources": [
+        "interview_prep.pdf",
+        "interview_prep.pdf",
+        "job_search_strategy.pdf",
+        "interview_prep.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 925.14
+    },
+    {
+      "id": "Q022",
+      "question": "Why does the STAR method help candidates give stronger behavioral interview answers?",
+      "expected_source": "interview_prep.pdf",
+      "retrieved_sources": [
+        "interview_prep.pdf",
+        "interview_prep.pdf",
+        "interview_prep.pdf",
+        "job_search_strategy.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 3043.2
+    },
+    {
+      "id": "Q023",
+      "question": "What is a common mistake candidates make when answering 'What is your greatest weakness?'",
+      "expected_source": "interview_prep.pdf",
+      "retrieved_sources": [
+        "interview_prep.pdf",
+        "interview_prep.pdf",
+        "cover_letters.pdf",
+        "job_search_strategy.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 5028.9
+    },
+    {
+      "id": "Q024",
+      "question": "Should a candidate prepare questions to ask the interviewer at the end of the interview?",
+      "expected_source": "interview_prep.pdf",
+      "retrieved_sources": [
+        "interview_prep.pdf",
+        "interview_prep.pdf",
+        "job_search_strategy.pdf",
+        "interview_prep.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 3992.23
+    },
+    {
+      "id": "Q025",
+      "question": "A candidate is asked a system design question and immediately jumps to writing code. What is the issue with this approach and what should they do instead?",
+      "expected_source": "interview_prep.pdf",
+      "retrieved_sources": [
+        "interview_prep.pdf",
+        "interview_prep.pdf",
+        "interview_prep.pdf",
+        "interview_prep.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 9128.25
+    },
+    {
+      "id": "Q026",
+      "question": "What is the purpose of a technical screening round in a hiring process?",
+      "expected_source": "interview_prep.pdf",
+      "retrieved_sources": [
+        "interview_prep.pdf",
+        "interview_prep.pdf",
+        "interview_prep.pdf",
+        "job_search_strategy.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 945.15
+    },
+    {
+      "id": "Q027",
+      "question": "Is it appropriate to negotiate salary during the very first interview?",
+      "expected_source": "interview_prep.pdf",
+      "retrieved_sources": [
+        "salary_negotiation.pdf",
+        "interview_prep.pdf",
+        "salary_negotiation.pdf",
+        "interview_prep.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 4021.79
+    },
+    {
+      "id": "Q028",
+      "question": "What should a candidate do within 24 hours of finishing an interview?",
+      "expected_source": "interview_prep.pdf",
+      "retrieved_sources": [
+        "interview_prep.pdf",
+        "interview_prep.pdf",
+        "salary_negotiation.pdf",
+        "interview_prep.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 4996.58
+    },
+    {
+      "id": "Q029",
+      "question": "How do behavioral interviews and technical interviews differ in what they are trying to assess, and why might a company use both?",
+      "expected_source": "interview_prep.pdf",
+      "retrieved_sources": [
+        "interview_prep.pdf",
+        "interview_prep.pdf",
+        "interview_prep.pdf",
+        "job_search_strategy.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 8129.8
+    },
+    {
+      "id": "Q030",
+      "question": "What is a mock interview?",
+      "expected_source": "interview_prep.pdf",
+      "retrieved_sources": [
+        "interview_prep.pdf",
+        "interview_prep.pdf",
+        "interview_prep.pdf",
+        "interview_prep.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 4938.28
+    },
+    {
+      "id": "Q031",
+      "question": "What is the 'hidden job market'?",
+      "expected_source": "job_search_strategy.pdf",
+      "retrieved_sources": [
+        "job_search_strategy.pdf",
+        "salary_negotiation.pdf",
+        "linkedin_branding.pdf",
+        "ats_optimization.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 963.65
+    },
+    {
+      "id": "Q032",
+      "question": "Why is networking often considered more effective than cold-applying to job postings?",
+      "expected_source": "job_search_strategy.pdf",
+      "retrieved_sources": [
+        "job_search_strategy.pdf",
+        "linkedin_branding.pdf",
+        "job_search_strategy.pdf",
+        "interview_prep.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 3112.08
+    },
+    {
+      "id": "Q033",
+      "question": "What is an informational interview?",
+      "expected_source": "job_search_strategy.pdf",
+      "retrieved_sources": [
+        "job_search_strategy.pdf",
+        "interview_prep.pdf",
+        "interview_prep.pdf",
+        "interview_prep.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 9017.42
+    },
+    {
+      "id": "Q034",
+      "question": "How often should a job seeker update their LinkedIn profile while actively job hunting?",
+      "expected_source": "job_search_strategy.pdf",
+      "retrieved_sources": [
+        "linkedin_branding.pdf",
+        "job_search_strategy.pdf",
+        "linkedin_branding.pdf",
+        "job_search_strategy.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 3984.26
+    },
+    {
+      "id": "Q035",
+      "question": "Why might applying to a smaller number of highly targeted jobs be more effective than mass-applying to many postings?",
+      "expected_source": "job_search_strategy.pdf",
+      "retrieved_sources": [
+        "linkedin_branding.pdf",
+        "job_search_strategy.pdf",
+        "job_search_strategy.pdf",
+        "resume_writing.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 4152.5
+    },
+    {
+      "id": "Q036",
+      "question": "What is a career changer expected to emphasize when targeting a new industry?",
+      "expected_source": "job_search_strategy.pdf",
+      "retrieved_sources": [
+        "job_search_strategy.pdf",
+        "job_search_strategy.pdf",
+        "resume_writing.pdf",
+        "remote_work_and_career_pivot.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 1037.96
+    },
+    {
+      "id": "Q037",
+      "question": "What is the recommended first step before starting a job search?",
+      "expected_source": "job_search_strategy.pdf",
+      "retrieved_sources": [
+        "job_search_strategy.pdf",
+        "interview_prep.pdf",
+        "salary_negotiation.pdf",
+        "linkedin_branding.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 7977.69
+    },
+    {
+      "id": "Q038",
+      "question": "What is the recommended structure for a LinkedIn 'About' section?",
+      "expected_source": "linkedin_branding.pdf",
+      "retrieved_sources": [
+        "linkedin_branding.pdf",
+        "job_search_strategy.pdf",
+        "resume_writing.pdf",
+        "ats_optimization.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 1052.44
+    },
+    {
+      "id": "Q039",
+      "question": "Why does a professional headline on LinkedIn matter more than just listing a job title?",
+      "expected_source": "linkedin_branding.pdf",
+      "retrieved_sources": [
+        "linkedin_branding.pdf",
+        "job_search_strategy.pdf",
+        "job_search_strategy.pdf",
+        "cover_letters.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 5027.18
+    },
+    {
+      "id": "Q040",
+      "question": "What is the benefit of turning on the 'Open to Work' feature on LinkedIn?",
+      "expected_source": "linkedin_branding.pdf",
+      "retrieved_sources": [
+        "linkedin_branding.pdf",
+        "linkedin_branding.pdf",
+        "job_search_strategy.pdf",
+        "job_search_strategy.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 4959.32
+    },
+    {
+      "id": "Q041",
+      "question": "Should a candidate request recommendations on LinkedIn from past colleagues?",
+      "expected_source": "linkedin_branding.pdf",
+      "retrieved_sources": [
+        "linkedin_branding.pdf",
+        "linkedin_branding.pdf",
+        "job_search_strategy.pdf",
+        "resume_writing.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 3983.71
+    },
+    {
+      "id": "Q042",
+      "question": "When is the best time to negotiate salary in a hiring process?",
+      "expected_source": "salary_negotiation.pdf",
+      "retrieved_sources": [
+        "salary_negotiation.pdf",
+        "interview_prep.pdf",
+        "salary_negotiation.pdf",
+        "interview_prep.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 3956.86
+    },
+    {
+      "id": "Q043",
+      "question": "Why is it often recommended to let the employer state a number first during salary discussions?",
+      "expected_source": "salary_negotiation.pdf",
+      "retrieved_sources": [
+        "salary_negotiation.pdf",
+        "salary_negotiation.pdf",
+        "interview_prep.pdf",
+        "job_search_strategy.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 5057.36
+    },
+    {
+      "id": "Q044",
+      "question": "Besides base salary, what other elements can be negotiated in a job offer?",
+      "expected_source": "salary_negotiation.pdf",
+      "retrieved_sources": [
+        "salary_negotiation.pdf",
+        "salary_negotiation.pdf",
+        "interview_prep.pdf",
+        "job_search_strategy.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 8022.59
+    },
+    {
+      "id": "Q045",
+      "question": "Should a candidate research market salary data before entering a negotiation?",
+      "expected_source": "salary_negotiation.pdf",
+      "retrieved_sources": [
+        "salary_negotiation.pdf",
+        "salary_negotiation.pdf",
+        "interview_prep.pdf",
+        "job_search_strategy.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 957.37
+    },
+    {
+      "id": "Q046",
+      "question": "What is a key resume adjustment for candidates applying to fully remote roles?",
+      "expected_source": "remote_work_and_career_pivot.pdf",
+      "retrieved_sources": [
+        "remote_work_and_career_pivot.pdf",
+        "resume_writing.pdf",
+        "resume_writing.pdf",
+        "resume_writing.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 3018.86
+    },
+    {
+      "id": "Q047",
+      "question": "What is 'career pivoting' typically defined as?",
+      "expected_source": "remote_work_and_career_pivot.pdf",
+      "retrieved_sources": [
+        "remote_work_and_career_pivot.pdf",
+        "remote_work_and_career_pivot.pdf",
+        "resume_writing.pdf",
+        "job_search_strategy.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 7960.25
+    },
+    {
+      "id": "Q048",
+      "question": "Why might a candidate build a personal project portfolio when transitioning into a technical field without formal work experience in it?",
+      "expected_source": "remote_work_and_career_pivot.pdf",
+      "retrieved_sources": [
+        "remote_work_and_career_pivot.pdf",
+        "resume_writing.pdf",
+        "remote_work_and_career_pivot.pdf",
+        "job_search_strategy.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 4002.76
+    },
+    {
+      "id": "Q049",
+      "question": "What does 'career growth trajectory' typically refer to on a resume?",
+      "expected_source": "remote_work_and_career_pivot.pdf",
+      "retrieved_sources": [
+        "remote_work_and_career_pivot.pdf",
+        "resume_writing.pdf",
+        "remote_work_and_career_pivot.pdf",
+        "resume_writing.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 962.69
+    },
+    {
+      "id": "Q050",
+      "question": "What is the current interest rate set by the Federal Reserve?",
+      "expected_source": null,
+      "retrieved_sources": [
+        "salary_negotiation.pdf",
+        "interview_prep.pdf",
+        "job_search_strategy.pdf",
+        "salary_negotiation.pdf"
+      ],
+      "status": "PASS",
+      "latency_ms": 6955.81
+    }
+  ]
+}

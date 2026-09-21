@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from src.retrieval.decomposition import decompose_and_retrieve
+from src.retrieval.multi_query import multi_query_retrieve
 from eval.metrics import (
     hit_rate_at_k,
     mean_reciprocal_rank,
@@ -26,44 +26,29 @@ def load_dataset():
         return json.load(file)
 
 
-def flatten_documents(documents_by_sub_question):
-    """
-    Flatten V4's document groups into one ordered list.
-
-    Documents are kept in sub-question order.
-    """
-
-    documents = []
-
-    for document_group in documents_by_sub_question:
-        for document in document_group:
-            documents.append(
-                {
-                    "source": document.metadata.get("source"),
-                    "page": document.metadata.get("page"),
-                    "content": document.page_content,
-                }
-            )
-
-    return documents
-
-
 def evaluate_question(question_data, k=4):
-    """Evaluate V4 decomposition retrieval for one golden question."""
+    """Evaluate V3 multi-query retrieval for one golden question."""
 
     question_id = question_data["id"]
     question = question_data["question"]
     expected_document = question_data["reference_document"]
 
-    result = decompose_and_retrieve(
+    documents = multi_query_retrieve(
         question=question,
-        max_sub_questions=4,
+        query_count=4,
         k=k,
     )
 
-    retrieved_documents = flatten_documents(
-        result["documents_by_sub_question"]
-    )
+    retrieved_documents = []
+
+    for document in documents:
+        retrieved_documents.append(
+            {
+                "source": document.metadata.get("source"),
+                "page": document.metadata.get("page"),
+                "content": document.page_content,
+            }
+        )
 
     expected_sources = []
 
@@ -82,7 +67,7 @@ def evaluate_question(question_data, k=4):
     )
 
     precision = context_precision(
-        retrieved_documents=retrieved_documents[:k],
+        retrieved_documents=retrieved_documents,
         expected_sources=expected_sources,
     )
 
@@ -93,7 +78,6 @@ def evaluate_question(question_data, k=4):
         "type": question_data.get("type"),
         "difficulty": question_data.get("difficulty"),
         "expected_document": expected_document,
-        "sub_questions": result["sub_questions"],
         "retrieved_documents": retrieved_documents,
         "hit_rate_at_k": hit_rate,
         "mrr": mrr,
@@ -101,8 +85,8 @@ def evaluate_question(question_data, k=4):
     }
 
 
-def run_evaluation(version="v4", k=4):
-    """Run V4 decomposition retrieval evaluation."""
+def run_evaluation(version="v3", k=4):
+    """Run V3 multi-query retrieval evaluation."""
 
     dataset = load_dataset()
     questions = dataset["questions"]
@@ -113,8 +97,8 @@ def run_evaluation(version="v4", k=4):
     print(f"Litmus Evaluation - {version}")
     print("=" * 60)
     print(f"Questions: {len(questions)}")
-    print(f"Retrieval K per sub-question: {k}")
-    print("Maximum sub-questions: 4")
+    print(f"Retrieval K: {k}")
+    print("Query Count: 4")
     print()
 
     for index, question_data in enumerate(
@@ -160,7 +144,7 @@ def run_evaluation(version="v4", k=4):
     output = {
         "version": version,
         "retrieval_k": k,
-        "max_sub_questions": 4,
+        "query_count": 4,
         "summary": summary,
         "questions": results,
     }
@@ -208,6 +192,6 @@ def run_evaluation(version="v4", k=4):
 
 if __name__ == "__main__":
     run_evaluation(
-        version="v4",
+        version="v3",
         k=4,
     )
